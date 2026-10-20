@@ -1,0 +1,2 @@
+ticker,company,drug,pdufa_date,notes
+BIIB,Biogen,Leqembi,,Exempelrad. Fyll på med egna bolag. Träff på bevakad ticker ger högsta prioritet; pdufa_date (ÅÅÅÅ-MM-DD) ger påminnelse dagen före och på dagen.
