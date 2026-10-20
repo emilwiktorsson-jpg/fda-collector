@@ -1,0 +1,41 @@
+name: collect
+
+on:
+  schedule:
+    # Var 15:e minut, vardagar 10:00-23:45 UTC (12:00-01:45 svensk sommartid). SEC tar emot 8-K 06:00-22:00 ET;
+    # de flesta FDA-besked kommer 08:00-09:30 ET (före öppning) eller 16:00-18:00 ET (efter stängning).
+    - cron: "*/15 10-23 * * 1-5"
+    # Sena kvällsbesked (22:00-02:00 ET = 02:00-06:00 UTC fångas av nästa dags första körning)
+    - cron: "*/15 0-2 * * 2-6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Samla och notifiera
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python collector.py
+      - name: Spara data
+        run: |
+          git config user.name "fda-collector"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "inget nytt" || git commit -m "data $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main || true
+          git push
