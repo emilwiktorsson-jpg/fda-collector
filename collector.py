@@ -67,7 +67,12 @@ NOT_NEWS = re.compile(r"FDA-approved|FDA-cleared|potential(ly)? approv|previousl
                       r"if approved|seek(s|ing)? (FDA )?approval|anticipated approval|subject to (FDA )?approval|"
                       r"(may|could|would|expects? to|plans? to) (be )?(receive|obtain|achieve|secure)|believes|"
                       r"the only FDA|first and only FDA|currently approved|is approved (in|for)|are approved (in|for)|"
-                      r"not (yet )?(been )?(reviewed|cleared|approved|authorized)|(has|have|is|are) not\b|neither", re.I)
+                      r"not (yet )?(been )?(reviewed|cleared|approved|authorized)|(has|have|is|are) not\b|neither|"
+                      # IND-godkännande = tillstånd att starta studie, inte produktgodkännande
+                      r"\bIND\b|investigational new drug|as previously announced|"
+                      # VD-/styrelsepresentationer som räknar upp gamla godkännanden
+                      r"\b(led|oversaw|instrumental in|has taken|track record|career|joins?|joined|appoint(ed|ment)|welcome|"
+                      r"brings|decades? of|years of experience)\b", re.I)
 
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Encoding": "gzip, deflate"})
