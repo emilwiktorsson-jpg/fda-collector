@@ -366,7 +366,11 @@
 "urn:tag:sec.gov,2008:accession-number=0001859919-26-000091",
 "urn:tag:sec.gov,2008:accession-number=0001555017-26-000014",
 "urn:tag:sec.gov,2008:accession-number=0002082866-26-000087",
-"urn:tag:sec.gov,2008:accession-number=0001104659-26-117798"
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-117798",
+"urn:tag:sec.gov,2008:accession-number=0000912767-26-000050",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006740",
+"urn:tag:sec.gov,2008:accession-number=0000799233-26-000045",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-047884"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -433,7 +437,8 @@
 "http://www.fda.gov/consumers/consumer-updates/hormone-replacement-therapies-can-help-women-bothersome-menopausal-symptoms",
 "http://www.fda.gov/industry/fda-user-fee-programs/over-counter-monograph-drug-user-fee-program-omufa",
 "http://www.fda.gov/drugs/compounding-quality-center-excellence/compounding-quality-center-excellence-discussion-series",
-"http://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-leadership-bios"
+"http://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-leadership-bios",
+"http://www.fda.gov/vaccines-blood-biologics/vyjuvek"
 ],
 "novel": [
 "Hibsago|10/20/2026",
