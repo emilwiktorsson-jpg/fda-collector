@@ -1,0 +1,33 @@
+ticker,company,drug,pdufa_date,notes
+PHAR,Pharming Group,leniolisib,2026-10-24,Joenja – APDS barn 4–11 år
+GSK,GSK,bepirovirsen,2026-10-26,Kronisk hepatit B
+INO,Inovio Pharmaceuticals,INO-3107,2026-10-30,Recurrent respiratory papillomatosis
+AGIO,Agios Pharmaceuticals,mitapivat,2026-11-01,Pyrukynd – sicklecellsjukdom 16+
+SMMT,Summit Therapeutics,ivonescimab,2026-11-14,EGFR-muterad NSCLC efter TKI
+BTAI,BioXcel Therapeutics,Igalmi,2026-11-14,Agitation i hemmet (bipolär/schizofreni)
+CYTK,Cytokinetics,aficamten,2026-11-14,Myqorzo – obstruktiv HCM label expansion
+SVRA,Savara,molgramostim,2026-11-22,Molbreevi – autoimmun PAP
+CAPR,Capricor Therapeutics,deramiocel,2026-11-22,DMD övre extremitet
+BBIO,BridgeBio Pharma,BBP-418,2026-11-27,Ribitol – LGMD2I/R9
+NUVL,Nuvalent,neladalkib,2026-11-27,NVL-655 – ALK+ NSCLC efter TKI
+PYPD,PolyPid,D-PLEX100,2026-11-28,Förebyggande av postoperativ infektion
+VRTX,Vertex Pharmaceuticals,povetacicept,2026-11-30,IgA-nefropati
+RHHBY,Roche,giredestrant,2026-11-30,Adjuvant ER+ tidig bröstcancer
+COGT,Cogent Biosciences,bezuclastinib,2026-11-30,+ sunitinib – GIST efter imatinib
+EXEL,Exelixis,zanzalintinib,2026-12-03,+ atezolizumab – förbehandlad mCRC
+VNDA,Vanda Pharmaceuticals,imsidolimab,2026-12-12,Generaliserad pustulär psoriasis
+CORT,Corcept Therapeutics,relacorilant,2026-12-17,Hyperkortisolism (Cushing) – återinlämning
+RHHBY,Roche,giredestrant,2026-12-18,+ everolimus – ESR1-muterad bröstcancer
+HNSA,Hansa Biopharma,imlifidase,2026-12-19,Desensitisering njurtransplantation (svenskt bolag, Nasdaq Stockholm)
+MLYS,Mineralys Therapeutics,lorundrostat,2026-12-22,Hypertoni
+ACLX,Arcellx,anito-cel,2026-12-23,Multipelt myelom 4:e linjen
+PRAX,Praxis Precision Medicines,relutrigine,2026-12-27,SCN2A/SCN8A-epilepsi
+COGT,Cogent Biosciences,bezuclastinib,2026-12-30,Icke-avancerad systemisk mastocytos
+IBRX,ImmunityBio,Anktiva,2027-01-06,+ BCG – BCG-refraktär NMIBC papillär
+LLY,Eli Lilly,orforglipron,2027-01-20,Trolig T2D-indikation – OBEKRÄFTAT datum
+DYN,Dyne Therapeutics,DYNE-251,2027-01-21,DMD exon 51
+PRAX,Praxis Precision Medicines,ulixacaltamide,2027-01-29,Essentiell tremor
+CGEM,Cullinan Therapeutics,zipalertinib,2027-02-27,NSCLC EGFR exon 20 efter platinum
+AQST,Aquestive Therapeutics,Anaphylm,2027-03-16,Återinlämning – läkemedel ej angivet i kalendern
+INBX,Inhibrx Biosciences,ozekibart,2027-04-14,INBRX-109 – kondrosarkom
+BBIO,BridgeBio Pharma,,2027-05-08,Priority review – läkemedel ej namngivet
