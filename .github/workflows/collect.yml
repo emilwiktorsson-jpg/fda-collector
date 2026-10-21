@@ -31,6 +31,10 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python collector.py
+      - name: Mät kursrörelse efter signaler (steg 1, inga order)
+        continue-on-error: true
+        timeout-minutes: 4
+        run: python pricetrack.py
       - name: Spara data
         run: |
           git config user.name "fda-collector"
