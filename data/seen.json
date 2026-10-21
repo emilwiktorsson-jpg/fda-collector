@@ -333,7 +333,9 @@
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111210",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111209",
 "urn:tag:sec.gov,2008:accession-number=0001683168-26-008004",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-111206"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111206",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111222",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066623"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -394,7 +396,8 @@
 "http://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026",
 "http://www.fda.gov/industry/generic-drug-user-fee-amendments/gdufa-paid-facilities-list",
 "http://www.fda.gov/drugs/medication-health-fraud/fraudulent-products",
-"http://www.fda.gov/industry/fda-user-fee-programs/gdufa-type-ii-api-dmf-payment-receipts-report"
+"http://www.fda.gov/industry/fda-user-fee-programs/gdufa-type-ii-api-dmf-payment-receipts-report",
+"http://www.fda.gov/about-fda/accelerating-rare-disease-cures-arc-program/rare-disease-news-events"
 ],
 "novel": [
 "Hibsago|10/20/2026",
