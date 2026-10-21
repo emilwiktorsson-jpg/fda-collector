@@ -221,8 +221,9 @@ def load_watchlist():
 
 
 def all_rows():
-    """(ticker, rad, från_kalender) för varje rad i watchlist.csv och pdufa-calendar.csv."""
-    for p, is_cal in (("watchlist.csv", False), ("pdufa-calendar.csv", True)):
+    """(ticker, rad, lägre_prioritet) för varje rad i watchlist.csv, pdufa-calendar.csv och x-watch.csv."""
+    # x-watch.csv = case från bevakade X-profiler (t.ex. @jfais20); behandlas som kalendern (inga ÖVRIGT-notiser)
+    for p, is_cal in (("watchlist.csv", False), ("pdufa-calendar.csv", True), ("x-watch.csv", True)):
         if os.path.exists(p):
             with open(p, encoding="utf-8") as f:
                 for r in csv.DictReader(f):
