@@ -252,6 +252,89 @@ def pdufa_reminders(wl, st):
                 st["reminded"].append(key)
 
 
+# ----------------------------------------------------------------------------- berikning (för tradebedömning)
+def market_status(now=None):
+    """Handelsfönster i svensk tid för USA-aktier via Avanza/Nordnet (okt 2026):
+    Nordnet förhandel 10:00–15:30, Avanza förhandel 11:00–15:30, ordinarie 15:30–22:00, Avanza efterhandel 22:00–22:30.
+    USA-helgdagar hanteras inte."""
+    now = now or dt.datetime.now(SE)
+    hm = now.hour * 60 + now.minute
+    wd = now.weekday()
+    if wd >= 5:
+        return "STÄNGD (helg). Nästa: förhandel mån 10:00 sv (Nordnet), 11:00 (Avanza)"
+    if hm < 10 * 60:
+        return "STÄNGD. Nästa: förhandel 10:00 sv (Nordnet), 11:00 (Avanza)"
+    if hm < 11 * 60:
+        return "FÖRHANDEL (Nordnet; Avanza från 11:00). Tunn likviditet, bred spread"
+    if hm < 15 * 60 + 30:
+        return "FÖRHANDEL (Avanza + Nordnet) till 15:30 sv. Tunn likviditet, bred spread"
+    if hm < 22 * 60:
+        left = 22 * 60 - hm
+        return f"ORDINARIE HANDEL, {left // 60} h {left % 60:02d} min kvar till 22:00 sv"
+    if hm < 22 * 60 + 30:
+        return f"EFTERHANDEL (Avanza) till 22:30 sv – {22 * 60 + 30 - hm} min kvar. Order makuleras 22:30"
+    nd = "mån" if wd == 4 else "imorgon"
+    return f"STÄNGD. Nästa: förhandel {nd} 10:00 sv (Nordnet), 11:00 (Avanza)"
+
+
+def quote_line(ticker):
+    """Kurs, rörelse (inkl. för-/efterhandel) och börsvärde från Yahoo. Tom sträng om något fallerar."""
+    try:
+        import yfinance as yf
+        t = yf.Ticker(ticker)
+        fi = t.fast_info
+        last = float(fi.last_price)
+        prev = float(fi.previous_close) if fi.previous_close else None
+        mcap = float(fi.market_cap) if fi.market_cap else None
+        cur = fi.currency or "USD"
+        parts = [f"Kurs {last:.2f} {cur}"]
+        if prev:
+            parts.append(f"{(last / prev - 1) * 100:+.1f} % vs föregående stängning")
+        try:
+            h = t.history(period="1d", interval="1m", prepost=True)
+            if len(h):
+                ext = float(h.Close.dropna().iloc[-1])
+                if abs(ext / last - 1) > 0.002:
+                    parts.append(f"för-/efterhandel {ext:.2f} ({(ext / last - 1) * 100:+.1f} %)")
+        except Exception:  # noqa
+            pass
+        if mcap:
+            parts.append(f"börsvärde {mcap / 1e9:.2f} mdr {cur}" if mcap >= 1e9 else f"börsvärde {mcap / 1e6:.0f} M{cur}")
+        return ", ".join(parts)
+    except Exception as ex:  # noqa
+        log_error(f"quote {ticker}: {ex}")
+        return ""
+
+
+def pdufa_context(ticker, drug_hint=""):
+    """Var beslutet väntat? Jämför med pdufa_date i listorna."""
+    today = dt.datetime.now(SE).date()
+    best = None
+    for t, r, _ in all_rows():
+        if t != ticker.upper():
+            continue
+        d = (r.get("pdufa_date") or "").strip()
+        if not d:
+            continue
+        try:
+            pd_ = dt.date.fromisoformat(d)
+        except ValueError:
+            continue
+        if best is None or abs((pd_ - today).days) < abs((best[0] - today).days):
+            best = (pd_, r.get("drug") or "")
+    if not best:
+        return "PDUFA: inget datum i listorna – oväntat eller ej bevakat beslut"
+    pd_, drug = best
+    diff = (pd_ - today).days
+    if diff == 0:
+        when = "kom på PDUFA-dagen"
+    elif diff > 0:
+        when = f"kom {diff} dagar FÖRE PDUFA"
+    else:
+        when = f"kom {-diff} dagar efter PDUFA"
+    return f"PDUFA: {pd_} ({drug}) i listorna – {when}"
+
+
 # ----------------------------------------------------------------------------- SEC
 def sec_tickers():
     r = get(SEC_TICKERS)
@@ -446,8 +529,14 @@ def main():
         if h["category"] == "ÖVRIGT" and (not h["watch"] or h["ticker"].split("/")[0] in wl["cal_only"]):
             continue  # vardagsbrus (BLA/NDA-omnämnanden) notifieras bara för bolag i watchlist.csv
         title = f"{'BEVAKAD ' if h['watch'] else ''}{h['category']}: {h['ticker']}"
-        body = (f"{h['company'] or h['title']}\n{h['source']} {fmt_times(h['t'])}\n\n{h['snippet'][:400]}\n\n"
-                f"Kontrollera själv i källan innan du agerar.")
+        t0 = h["ticker"].split("/")[0]
+        lines = [f"{h['company'] or h['title']} – {h['category']}", f"{h['source']} {fmt_times(h['t'])}",
+                 f"Marknad: {market_status()}"]
+        q = quote_line(t0)
+        if q:
+            lines.append(q)
+        lines.append(pdufa_context(t0))
+        body = "\n".join(lines) + f"\n\n{h['snippet'][:400]}\n\nKontrollera själv i källan innan du agerar."
         notify(title, body, priority=5 if urgent else 3,
                tags="rotating_light" if h["category"] in ("GODKÄNT", "CRL") else "pill", click=h["url"])
         stats["notices"] = stats.get("notices", 0) + 1
