@@ -361,7 +361,12 @@
 "urn:tag:sec.gov,2008:accession-number=0001062993-26-005462",
 "urn:tag:sec.gov,2008:accession-number=0001437749-26-033095",
 "urn:tag:sec.gov,2008:accession-number=0000016058-26-000009",
-"urn:tag:sec.gov,2008:accession-number=0000950142-26-002797"
+"urn:tag:sec.gov,2008:accession-number=0000950142-26-002797",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-427754",
+"urn:tag:sec.gov,2008:accession-number=0001859919-26-000091",
+"urn:tag:sec.gov,2008:accession-number=0001555017-26-000014",
+"urn:tag:sec.gov,2008:accession-number=0002082866-26-000087",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-117798"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -427,7 +432,8 @@
 "http://www.fda.gov/vaccines-blood-biologics/workshops-meetings-conferences-biologics/fda-roundtable-strengthening-supply-chain-blood-manufacturing-09292026",
 "http://www.fda.gov/consumers/consumer-updates/hormone-replacement-therapies-can-help-women-bothersome-menopausal-symptoms",
 "http://www.fda.gov/industry/fda-user-fee-programs/over-counter-monograph-drug-user-fee-program-omufa",
-"http://www.fda.gov/drugs/compounding-quality-center-excellence/compounding-quality-center-excellence-discussion-series"
+"http://www.fda.gov/drugs/compounding-quality-center-excellence/compounding-quality-center-excellence-discussion-series",
+"http://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-leadership-bios"
 ],
 "novel": [
 "Hibsago|10/20/2026",
