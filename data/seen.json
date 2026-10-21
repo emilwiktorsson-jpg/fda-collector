@@ -277,7 +277,27 @@
 "urn:tag:sec.gov,2008:accession-number=0001178913-26-004808",
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-427190",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111174",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-111173"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111173",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-427224",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066610",
+"urn:tag:sec.gov,2008:accession-number=0000074208-26-000081",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111195",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111193",
+"urn:tag:sec.gov,2008:accession-number=0000066382-26-000173",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-047848",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066608",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066606",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066605",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-117576",
+"urn:tag:sec.gov,2008:accession-number=0000753308-26-000077",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066601",
+"urn:tag:sec.gov,2008:accession-number=0000799292-26-000030",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-117579",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111194",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111190",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111191",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-047847",
+"urn:tag:sec.gov,2008:accession-number=0001205613-26-000075"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -337,7 +357,8 @@
 "http://www.fda.gov/vaccines-blood-biologics/compliance-actions-biologics/clinical-investigator-inspection-list-e-k",
 "http://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026",
 "http://www.fda.gov/industry/generic-drug-user-fee-amendments/gdufa-paid-facilities-list",
-"http://www.fda.gov/drugs/medication-health-fraud/fraudulent-products"
+"http://www.fda.gov/drugs/medication-health-fraud/fraudulent-products",
+"http://www.fda.gov/industry/fda-user-fee-programs/gdufa-type-ii-api-dmf-payment-receipts-report"
 ],
 "novel": [
 "Hibsago|10/20/2026",
