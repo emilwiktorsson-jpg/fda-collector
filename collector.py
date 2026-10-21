@@ -202,28 +202,38 @@ def classify(text):
 
 # ----------------------------------------------------------------------------- watchlist
 def load_watchlist():
-    wl = {"tickers": {}, "drugs": [], "companies": []}
-    p = "watchlist.csv"
-    if not os.path.exists(p):
-        return wl
-    with open(p, encoding="utf-8") as f:
-        for r in csv.DictReader(f):
-            t = (r.get("ticker") or "").strip().upper()
-            if not t or t.startswith("#"):
-                continue
+    """watchlist.csv = bolag du följer (alla kategorier notifieras).
+    pdufa-calendar.csv = kommande FDA-beslut i bred bemärkelse (påminnelse + GODKÄNT/CRL/STOPP, men inte ÖVRIGT)."""
+    wl = {"tickers": {}, "drugs": [], "companies": [], "cal_only": set()}
+    own = set()
+    for t, r, is_cal in all_rows():
+        if t not in wl["tickers"] or not is_cal:
             wl["tickers"][t] = r
-            d = (r.get("drug") or "").strip()
-            if len(d) >= 4:
-                wl["drugs"].append((d.lower(), t))
-            c = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", (r.get("company") or "").lower())).strip()
-            if len(c) >= 5 and (c, t) not in wl["companies"]:
-                wl["companies"].append((c, t))
+        d = (r.get("drug") or "").strip()
+        if len(d) >= 4:
+            wl["drugs"].append((d.lower(), t))
+        c = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", (r.get("company") or "").lower())).strip()
+        if len(c) >= 5 and (c, t) not in wl["companies"]:
+            wl["companies"].append((c, t))
+        (wl["cal_only"] if is_cal else own).add(t)
+    wl["cal_only"] -= own  # bolag i watchlist.csv behåller full prioritet även om de står i kalendern
     return wl
+
+
+def all_rows():
+    """(ticker, rad, från_kalender) för varje rad i watchlist.csv och pdufa-calendar.csv."""
+    for p, is_cal in (("watchlist.csv", False), ("pdufa-calendar.csv", True)):
+        if os.path.exists(p):
+            with open(p, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    t = (r.get("ticker") or "").strip().upper()
+                    if t and not t.startswith("#"):
+                        yield t, r, is_cal
 
 
 def pdufa_reminders(wl, st):
     today = dt.datetime.now(SE).date()
-    for t, r in wl["tickers"].items():
+    for t, r, _ in all_rows():
         d = (r.get("pdufa_date") or "").strip()
         if not d:
             continue
@@ -232,9 +242,10 @@ def pdufa_reminders(wl, st):
         except ValueError:
             continue
         for days, label in ((1, "imorgon"), (0, "idag")):
-            key = f"{t}|{d}|{days}"
+            key = f"{t}|{d}|{days}|{(r.get('drug') or '')[:20]}"
             if pd_ - today == dt.timedelta(days=days) and key not in st["reminded"]:
                 notify(f"PDUFA {label}: {t}", f"{r.get('company', '')} – {r.get('drug', '')}. PDUFA-datum {d}. "
+                                             f"{r.get('notes', '')}\n"
                                              f"Beskedet kan komma när som helst under dagen, ofta efter USA-stängning.",
                        priority=4, tags="calendar")
                 st["reminded"].append(key)
@@ -431,8 +442,8 @@ def main():
         if first_run:
             continue  # första körningen: bygg bara upp "sedda" utan att spamma
         urgent = h["category"] in ("GODKÄNT", "CRL") or h["watch"]
-        if h["category"] == "ÖVRIGT" and not h["watch"]:
-            continue  # vardagsbrus (BLA/NDA-omnämnanden) notifieras bara för bevakade bolag
+        if h["category"] == "ÖVRIGT" and (not h["watch"] or h["ticker"].split("/")[0] in wl["cal_only"]):
+            continue  # vardagsbrus (BLA/NDA-omnämnanden) notifieras bara för bolag i watchlist.csv
         title = f"{'BEVAKAD ' if h['watch'] else ''}{h['category']}: {h['ticker']}"
         body = (f"{h['company'] or h['title']}\n{h['source']} {fmt_times(h['t'])}\n\n{h['snippet'][:400]}\n\n"
                 f"Kontrollera själv i källan innan du agerar.")
