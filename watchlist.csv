@@ -1,2 +1,31 @@
 ticker,company,drug,pdufa_date,notes
-BIIB,Biogen,Leqembi,,Exempelrad. Fyll på med egna bolag. Träff på bevakad ticker ger högsta prioritet; pdufa_date (ÅÅÅÅ-MM-DD) ger påminnelse dagen före och på dagen.
+BIIB,Biogen,Leqembi,,SEC 8-K. Partner till Eisai/BioArctic
+BIIB,Biogen,lecanemab,,
+LLY,Eli Lilly,Kisunla,,SEC 8-K
+LLY,Eli Lilly,donanemab,,
+LLY,Eli Lilly,orforglipron,,
+LLY,Eli Lilly,retatrutide,,
+NVO,Novo Nordisk,Wegovy,,Utländskt bolag: SEC 6-K (ej 8-K)
+NVO,Novo Nordisk,semaglutide,,
+NVO,Novo Nordisk,CagriSema,,
+NVO,Novo Nordisk,cagrilintide,,
+ESALY,Eisai,Leqembi,,Utländskt bolag: 6-K om SEC-registrerat; annars via FDA-flöden och Biogens 8-K
+ESALY,Eisai,lecanemab,,
+BIOA-B,BioArctic,lecanemab,,Ej SEC. Fångas via läkemedelsnamn i FDA-flöden samt Eisai/Biogen
+BIOA-B,BioArctic,exidavnemab,,
+VICO,Vicore Pharma,buloxibutid,,Ej SEC
+EGTX,Egetis Therapeutics,Emcitate,,Ej SEC. Emcitate (tiratricol) godkänt av FDA 2026-09-28
+EGTX,Egetis Therapeutics,tiratricol,,
+EGTX,Egetis Therapeutics,Aladote,,
+CAMX,Camurus,Brixadi,,Ej SEC
+CAMX,Camurus,Oczyesa,,
+CAMX,Camurus,CAM2029,,
+SOBI,Sobi,Gamifant,,Ej SEC (Swedish Orphan Biovitrum)
+SOBI,Swedish Orphan Biovitrum,Doptelet,,
+SOBI,Sobi,Aspaveli,,
+SOBI,Sobi,Altuvoct,,
+IRLAB-A,IRLAB Therapeutics,mesdopetam,,Ej SEC
+IRLAB-A,IRLAB Therapeutics,pirepemat,,
+ALZCUR,AlzeCure Pharma,ACD856,,Ej SEC
+ALZCUR,AlzeCure Pharma,ACD440,,
+ALZ,Alzinova,ALZ-101,,Ej SEC
