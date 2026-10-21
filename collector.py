@@ -34,8 +34,9 @@ NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
 UA = os.environ.get("SEC_USER_AGENT", "").strip() or "fda-collector (ange SEC_USER_AGENT med e-post)"
 MAX_8K = int(os.environ.get("MAX_8K", "100"))
 
-SEC_ATOM = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&company=&dateb=&owner=include"
-            f"&start=0&count={MAX_8K}&output=atom")
+def sec_atom(form):
+    return ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=" + form +
+            f"&company=&dateb=&owner=include&start=0&count={MAX_8K}&output=atom")
 SEC_TICKERS = "https://www.sec.gov/files/company_tickers.json"
 FDA_FEEDS = [f"https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/{k}/rss.xml"
              for k in ("press-releases", "drugs", "biologics")]
@@ -201,7 +202,7 @@ def classify(text):
 
 # ----------------------------------------------------------------------------- watchlist
 def load_watchlist():
-    wl = {"tickers": {}, "drugs": []}
+    wl = {"tickers": {}, "drugs": [], "companies": []}
     p = "watchlist.csv"
     if not os.path.exists(p):
         return wl
@@ -214,6 +215,9 @@ def load_watchlist():
             d = (r.get("drug") or "").strip()
             if len(d) >= 4:
                 wl["drugs"].append((d.lower(), t))
+            c = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", (r.get("company") or "").lower())).strip()
+            if len(c) >= 5 and (c, t) not in wl["companies"]:
+                wl["companies"].append((c, t))
     return wl
 
 
@@ -246,10 +250,12 @@ def sec_tickers():
     return out
 
 
-def sec_8k(st, tick, wl, stats):
-    feed = feedparser.parse(get(SEC_ATOM).content)
+def sec_feed(st, tick, wl, stats, form="8-K", only_watch=False):
+    """Läser SEC:s senaste anmälningar av given typ. 8-K = amerikanska bolag (alla noterade läses).
+    6-K = utländska bolag (Novo Nordisk, Eisai m.fl.); stort flöde, så bara watchlist-bolag läses."""
+    feed = feedparser.parse(get(sec_atom(form)).content)
     entries = feed.entries or []
-    stats["sec_entries"] = len(entries)
+    stats["sec_entries"] = stats.get("sec_entries", 0) + len(entries)
     hits = []
     for e in entries:
         eid = e.get("id") or e.get("link")
@@ -257,7 +263,7 @@ def sec_8k(st, tick, wl, stats):
             continue
         m = re.search(r"\((\d{5,10})\)", e.get("title", ""))
         cik = int(m.group(1)) if m else None
-        if cik not in tick:
+        if cik not in tick or (only_watch and tick[cik][0] not in wl["tickers"]):
             st["sec"].append(eid)
             continue
         stats["sec_listed"] = stats.get("sec_listed", 0) + 1
@@ -287,7 +293,7 @@ def sec_8k(st, tick, wl, stats):
             continue
         watch = ticker in wl["tickers"]
         stats["sec_hits"] = stats.get("sec_hits", 0) + 1
-        hits.append(dict(source="SEC 8-K", ticker=ticker, company=company, category=cat, watch=watch,
+        hits.append(dict(source=f"SEC {form}", ticker=ticker, company=company, category=cat, watch=watch,
                          title=e.get("title", ""), url=e.link, t=accepted, snippet=snip))
         time.sleep(0.15)
     return hits
@@ -317,6 +323,9 @@ def match_companies(text, cidx, wl):
             found.append(t)
     for d, t in wl["drugs"]:
         if d in text.lower() and t not in found:
+            found.append(t)
+    for c, t in wl["companies"]:  # bevakade bolag utan SEC-notering (t.ex. svenska)
+        if f" {c} " in f" {low} " and t not in found:
             found.append(t)
     return found[:6]
 
@@ -402,10 +411,11 @@ def main():
     cidx = company_index(tick)
 
     hits = []
-    try:
-        hits += sec_8k(st, tick, wl, stats)
-    except Exception as ex:  # noqa
-        log_error(f"SEC 8-K: {ex}")
+    for form, only_watch in (("8-K", False), ("6-K", True)):
+        try:
+            hits += sec_feed(st, tick, wl, stats, form, only_watch)
+        except Exception as ex:  # noqa
+            log_error(f"SEC {form}: {ex}")
     hits += fda_press(st, tick, cidx, wl, stats)
     hits += fda_novel(st, cidx, wl, stats)
     pdufa_reminders(wl, st)
