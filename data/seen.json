@@ -752,7 +752,16 @@
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-118031",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-066821",
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-048037",
-"urn:tag:sec.gov,2008:accession-number=0001185185-26-004913"
+"urn:tag:sec.gov,2008:accession-number=0001185185-26-004913",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048039",
+"urn:tag:sec.gov,2008:accession-number=0001477932-26-006396",
+"urn:tag:sec.gov,2008:accession-number=0001326771-26-000167",
+"urn:tag:sec.gov,2008:accession-number=0001174947-26-000927",
+"urn:tag:sec.gov,2008:accession-number=0001711799-26-000085",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111580",
+"urn:tag:sec.gov,2008:accession-number=0001654954-26-009110",
+"urn:tag:sec.gov,2008:accession-number=0001027552-26-000122",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-118043"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -826,7 +835,9 @@
 "http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-rare-disease-framework-initiative-public-meeting-10282026",
 "http://www.fda.gov/drugs/development-resources/complex-innovative-trial-design-meeting-program",
 "http://www.fda.gov/drugs/generic-drugs/competitive-generic-therapy-approvals",
-"http://www.fda.gov/drugs/guidance-compliance-regulatory-information/non-compliance-letters-under-505bd1-federal-food-drug-and-cosmetic-act"
+"http://www.fda.gov/drugs/guidance-compliance-regulatory-information/non-compliance-letters-under-505bd1-federal-food-drug-and-cosmetic-act",
+"http://www.fda.gov/news-events/expanded-access/expanded-access-information-industry",
+"http://www.fda.gov/drugs/human-drug-compounding/registered-outsourcing-facilities"
 ],
 "novel": [
 "Hibsago|10/20/2026",
