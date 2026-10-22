@@ -761,7 +761,14 @@
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111580",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-009110",
 "urn:tag:sec.gov,2008:accession-number=0001027552-26-000122",
-"urn:tag:sec.gov,2008:accession-number=0001104659-26-118043"
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-118043",
+"urn:tag:sec.gov,2008:accession-number=0001331451-26-000194",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066829",
+"urn:tag:sec.gov,2008:accession-number=0001331465-26-000189",
+"urn:tag:sec.gov,2008:accession-number=0000906163-26-000099",
+"urn:tag:sec.gov,2008:accession-number=0000790816-26-000041",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006766",
+"urn:tag:sec.gov,2008:accession-number=0000933267-26-000067"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -837,7 +844,8 @@
 "http://www.fda.gov/drugs/generic-drugs/competitive-generic-therapy-approvals",
 "http://www.fda.gov/drugs/guidance-compliance-regulatory-information/non-compliance-letters-under-505bd1-federal-food-drug-and-cosmetic-act",
 "http://www.fda.gov/news-events/expanded-access/expanded-access-information-industry",
-"http://www.fda.gov/drugs/human-drug-compounding/registered-outsourcing-facilities"
+"http://www.fda.gov/drugs/human-drug-compounding/registered-outsourcing-facilities",
+"http://www.fda.gov/drugs/buying-using-medicine-safely/generic-drugs"
 ],
 "novel": [
 "Hibsago|10/20/2026",
