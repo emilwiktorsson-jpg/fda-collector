@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-10-22 14:16 sv)
+# Signalutvärdering (uppdaterad 2026-10-22 15:16 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -17,8 +17,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - Upptäcktsfördröjning: median 12 min, max 12 min (SEC/FDA-tid -> upptäckt)
 - Redan rört sig före köp: -0.7 % snitt, -0.7 % median, 0/1 positiva
 - 15 min efter köp: -0.4 % snitt, -0.4 % median, 0/1 positiva
-- 60 min efter köp: –
-- Bästa inom 60 min: –
+- 60 min efter köp: +0.9 % snitt, +0.9 % median, 1/1 positiva
+- Bästa inom 60 min: +2.6 % snitt, +2.6 % median, 1/1 positiva
 - Dagens stängning: –
 - Nästa dags stängning: –
 
@@ -26,7 +26,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 10-22 13:43 | ABUS | STOPP | 12 min | -0.69 | – | – | pågår |
+| 10-22 13:43 | ABUS | STOPP | 12 min | -0.69 | 0.91 | – | pågår |
 | 10-22 12:25 | SUPN | GODKÄNT | 558 min | – | – | – | väntar på data |
 | 10-21 22:30 | IONS | GODKÄNT | 15 min | -0.07 | 0.00 | – | pågår |
 | 10-21 15:36 | INMB | GODKÄNT | 36 min | -2.01 | -0.30 | -2.72 | pågår |
