@@ -785,7 +785,12 @@
 "urn:tag:sec.gov,2008:accession-number=0001331465-26-000191",
 "urn:tag:sec.gov,2008:accession-number=0001062993-26-005492",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-009113",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-111632"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111632",
+"urn:tag:sec.gov,2008:accession-number=0001386067-26-000004",
+"urn:tag:sec.gov,2008:accession-number=0001171520-26-000313",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-428771",
+"urn:tag:sec.gov,2008:accession-number=0001034957-26-000071",
+"urn:tag:sec.gov,2008:accession-number=0001753926-26-001979"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -866,7 +871,8 @@
 "http://www.fda.gov/industry/neuroscience-advancement-and-innovation-nexus-nain/alzheimers-prevention-accelerator",
 "http://www.fda.gov/news-events/press-announcements/fda-launches-new-program-advance-neuroscience-medical-product-development",
 "http://www.fda.gov/industry/neuroscience-advancement-and-innovation-nexus-nain/about-nain",
-"http://www.fda.gov/industry/neuroscience-advancement-and-innovation-nexus-nain"
+"http://www.fda.gov/industry/neuroscience-advancement-and-innovation-nexus-nain",
+"http://www.fda.gov/drugs/development-approval-process-drugs/cder-small-business-industry-assistance-sbia"
 ],
 "novel": [
 "Hibsago|10/20/2026",
