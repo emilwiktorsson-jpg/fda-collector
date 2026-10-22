@@ -929,7 +929,32 @@
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-118168",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111718",
 "urn:tag:sec.gov,2008:accession-number=0001171843-26-006780",
-"urn:tag:sec.gov,2008:accession-number=0001997711-26-000180"
+"urn:tag:sec.gov,2008:accession-number=0001997711-26-000180",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-118193",
+"urn:tag:sec.gov,2008:accession-number=0001561032-26-000068",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048122",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429105",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066926",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111746",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040528",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111740",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048118",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040525",
+"urn:tag:sec.gov,2008:accession-number=0001683168-26-008024",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429080",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429079",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066920",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033285",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429065",
+"urn:tag:sec.gov,2008:accession-number=0001384905-26-000058",
+"urn:tag:sec.gov,2008:accession-number=0001488813-26-000100",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006781",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033290",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429101",
+"urn:tag:sec.gov,2008:accession-number=0001062993-26-005501",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111737",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111735",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-066922"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1017,7 +1042,8 @@
 "http://www.fda.gov/patients/fda-patient-listening-sessions/patient-listening-session-summaries",
 "http://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/accelerating-rare-disease-cures-arc-program",
 "http://www.fda.gov/drugs/drug-safety-and-availability/drug-alerts-and-statements",
-"http://www.fda.gov/drugs/drug-alerts-and-statements/center-drug-evaluation-and-researchs-arc-program-releases-its-2026-annual-report"
+"http://www.fda.gov/drugs/drug-alerts-and-statements/center-drug-evaluation-and-researchs-arc-program-releases-its-2026-annual-report",
+"http://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/2026-biological-license-application-approvals"
 ],
 "novel": [
 "Hibsago|10/20/2026",
