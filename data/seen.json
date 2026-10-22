@@ -734,7 +734,17 @@
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-428428",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111512",
 "urn:tag:sec.gov,2008:accession-number=0001330399-26-000140",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-111526"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111526",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-118023",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040458",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048034",
+"urn:tag:sec.gov,2008:accession-number=0001331757-26-000189",
+"urn:tag:sec.gov,2008:accession-number=0000080424-26-000252",
+"urn:tag:sec.gov,2008:accession-number=0001325814-26-000167",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-118018",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040453",
+"urn:tag:sec.gov,2008:accession-number=0001330399-26-000142",
+"urn:tag:sec.gov,2008:accession-number=0001654954-26-009101"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -804,7 +814,11 @@
 "http://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-leadership-bios",
 "http://www.fda.gov/vaccines-blood-biologics/vyjuvek",
 "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wedgewood-pharmacy-issues-recall-certain-compounded-veterinary-medications-within-expiry-due",
-"http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/2026-safety-and-availability-communications"
+"http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/2026-safety-and-availability-communications",
+"http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-rare-disease-framework-initiative-public-meeting-10282026",
+"http://www.fda.gov/drugs/development-resources/complex-innovative-trial-design-meeting-program",
+"http://www.fda.gov/drugs/generic-drugs/competitive-generic-therapy-approvals",
+"http://www.fda.gov/drugs/guidance-compliance-regulatory-information/non-compliance-letters-under-505bd1-federal-food-drug-and-cosmetic-act"
 ],
 "novel": [
 "Hibsago|10/20/2026",
