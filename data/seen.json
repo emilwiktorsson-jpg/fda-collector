@@ -1129,7 +1129,12 @@
 "urn:tag:sec.gov,2008:accession-number=0001331451-26-000196",
 "urn:tag:sec.gov,2008:accession-number=0000939057-26-000277",
 "urn:tag:sec.gov,2008:accession-number=0001140361-26-040631",
-"urn:tag:sec.gov,2008:accession-number=0001575872-26-000721"
+"urn:tag:sec.gov,2008:accession-number=0001575872-26-000721",
+"urn:tag:sec.gov,2008:accession-number=0001683168-26-008042",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033387",
+"urn:tag:sec.gov,2008:accession-number=0001575872-26-000725",
+"urn:tag:sec.gov,2008:accession-number=0001575872-26-000724",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112029"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1224,7 +1229,9 @@
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/pain-and-arthritis-products-containing-hidden-ingredients",
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/ultra-bon-may-be-harmful-due-hidden-ingredient",
 "http://www.fda.gov/drugs/medication-health-fraud/public-notification-green-lumber-contains-hidden-drug-ingredient",
-"http://www.fda.gov/drugs/resources-information-approved-drugs/other-cancer-accelerated-approvals"
+"http://www.fda.gov/drugs/resources-information-approved-drugs/other-cancer-accelerated-approvals",
+"http://www.fda.gov/drugs/news-events-human-drugs/notable-approvals-drugs",
+"http://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-once-weekly-insulin-type-2-diabetes-mellitus-pediatric-patients"
 ],
 "novel": [
 "Hibsago|10/20/2026",
