@@ -1117,7 +1117,14 @@
 "urn:tag:sec.gov,2008:accession-number=0000930413-26-003116",
 "urn:tag:sec.gov,2008:accession-number=0000930413-26-003115",
 "urn:tag:sec.gov,2008:accession-number=0000939057-26-000273",
-"urn:tag:sec.gov,2008:accession-number=0001292814-26-004998"
+"urn:tag:sec.gov,2008:accession-number=0001292814-26-004998",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-118407",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-067015",
+"urn:tag:sec.gov,2008:accession-number=0000939057-26-000275",
+"urn:tag:sec.gov,2008:accession-number=0001331463-26-000207",
+"urn:tag:sec.gov,2008:accession-number=0001654954-26-009123",
+"urn:tag:sec.gov,2008:accession-number=0000950157-26-001116",
+"urn:tag:sec.gov,2008:accession-number=0001654954-26-009121"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1208,7 +1215,11 @@
 "http://www.fda.gov/drugs/drug-alerts-and-statements/center-drug-evaluation-and-researchs-arc-program-releases-its-2026-annual-report",
 "http://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/2026-biological-license-application-approvals",
 "http://www.fda.gov/vaccines-blood-biologics/biologics-guidances/recently-issued-biologics-guidance-documents",
-"http://www.fda.gov/advisory-committees/advisory-committee-calendar/october-30-2026-dermatologic-and-ophthalmic-drugs-advisory-committee-meeting-announcement-10302026"
+"http://www.fda.gov/advisory-committees/advisory-committee-calendar/october-30-2026-dermatologic-and-ophthalmic-drugs-advisory-committee-meeting-announcement-10302026",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/pain-and-arthritis-products-containing-hidden-ingredients",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/ultra-bon-may-be-harmful-due-hidden-ingredient",
+"http://www.fda.gov/drugs/medication-health-fraud/public-notification-green-lumber-contains-hidden-drug-ingredient",
+"http://www.fda.gov/drugs/resources-information-approved-drugs/other-cancer-accelerated-approvals"
 ],
 "novel": [
 "Hibsago|10/20/2026",
