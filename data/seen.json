@@ -1029,7 +1029,12 @@
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-009117",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-111852",
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-429429",
-"urn:tag:sec.gov,2008:accession-number=0001437749-26-033327"
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033327",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033331",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-111858",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429453",
+"urn:tag:sec.gov,2008:accession-number=0001292814-26-004990",
+"urn:tag:sec.gov,2008:accession-number=0000950103-26-016061"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1118,7 +1123,8 @@
 "http://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/accelerating-rare-disease-cures-arc-program",
 "http://www.fda.gov/drugs/drug-safety-and-availability/drug-alerts-and-statements",
 "http://www.fda.gov/drugs/drug-alerts-and-statements/center-drug-evaluation-and-researchs-arc-program-releases-its-2026-annual-report",
-"http://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/2026-biological-license-application-approvals"
+"http://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/2026-biological-license-application-approvals",
+"http://www.fda.gov/vaccines-blood-biologics/biologics-guidances/recently-issued-biologics-guidance-documents"
 ],
 "novel": [
 "Hibsago|10/20/2026",
