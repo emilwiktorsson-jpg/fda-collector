@@ -1063,7 +1063,27 @@
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-429504",
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-118301",
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-048175",
-"urn:tag:sec.gov,2008:accession-number=0001493152-26-048176"
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048176",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429564",
+"urn:tag:sec.gov,2008:accession-number=0001005817-26-000139",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040605",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429549",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429546",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429539",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040596",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429533",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048183",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033342",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429531",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429523",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040608",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040607",
+"urn:tag:sec.gov,2008:accession-number=0001178913-26-004826",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-429548",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006790",
+"urn:tag:sec.gov,2008:accession-number=0001554855-26-002169",
+"urn:tag:sec.gov,2008:accession-number=0001140361-26-040600",
+"urn:tag:sec.gov,2008:accession-number=0000733099-26-000019"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1153,7 +1173,8 @@
 "http://www.fda.gov/drugs/drug-safety-and-availability/drug-alerts-and-statements",
 "http://www.fda.gov/drugs/drug-alerts-and-statements/center-drug-evaluation-and-researchs-arc-program-releases-its-2026-annual-report",
 "http://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/2026-biological-license-application-approvals",
-"http://www.fda.gov/vaccines-blood-biologics/biologics-guidances/recently-issued-biologics-guidance-documents"
+"http://www.fda.gov/vaccines-blood-biologics/biologics-guidances/recently-issued-biologics-guidance-documents",
+"http://www.fda.gov/advisory-committees/advisory-committee-calendar/october-30-2026-dermatologic-and-ophthalmic-drugs-advisory-committee-meeting-announcement-10302026"
 ],
 "novel": [
 "Hibsago|10/20/2026",

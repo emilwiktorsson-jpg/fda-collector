@@ -1,22 +1,22 @@
-# Signalutvärdering (uppdaterad 2026-10-23 14:50 sv)
+# Signalutvärdering (uppdaterad 2026-10-23 15:33 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (7 st)
+## Alla signaler – GODKÄNT (8 st)
 
 - Upptäcktsfördröjning: median 558 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +1.1 % snitt, -0.1 % median, 3/7 positiva
+- Redan rört sig före köp: +1.0 % snitt, +0.2 % median, 4/8 positiva
 - 15 min efter köp: -0.1 % snitt, +0.0 % median, 3/7 positiva
 - 60 min efter köp: -0.3 % snitt, +0.0 % median, 2/7 positiva
 - Bästa inom 60 min: +1.0 % snitt, +0.7 % median, 5/7 positiva
 - Dagens stängning: -2.0 % snitt, -2.3 % median, 2/7 positiva
 - Nästa dags stängning: -2.9 % snitt, -4.7 % median, 1/5 positiva
 
-## Alla signaler – STOPP (2 st)
+## Alla signaler – STOPP (3 st)
 
-- Upptäcktsfördröjning: median 28 min, max 28 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +13.1 % snitt, +13.1 % median, 1/2 positiva
-- 15 min efter köp: -2.7 % snitt, -2.7 % median, 0/2 positiva
+- Upptäcktsfördröjning: median 12 min, max 28 min (SEC/FDA-tid -> upptäckt)
+- Redan rört sig före köp: +8.6 % snitt, -0.3 % median, 1/3 positiva
+- 15 min efter köp: -2.8 % snitt, -3.0 % median, 0/3 positiva
 - 60 min efter köp: -0.8 % snitt, -0.8 % median, 1/2 positiva
 - Bästa inom 60 min: +9.8 % snitt, +9.8 % median, 2/2 positiva
 - Dagens stängning: -2.1 % snitt, -2.1 % median, 0/1 positiva
@@ -26,8 +26,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 10-23 14:50 | AARD | STOPP | 12 min | – | – | – | väntar på öppning |
-| 10-22 23:16 | PROF | GODKÄNT | 31 min | – | – | – | väntar på data |
+| 10-23 14:50 | AARD | STOPP | 12 min | -0.33 | – | – | pågår |
+| 10-22 23:16 | PROF | GODKÄNT | 31 min | 0.52 | – | – | pågår |
 | 10-22 22:45 | AARD | STOPP | 28 min | 26.82 | -2.59 | – | pågår |
 | 10-22 13:43 | ABUS | STOPP | 12 min | -0.69 | 0.91 | -2.09 | pågår |
 | 10-22 12:25 | SUPN | GODKÄNT | 558 min | 1.29 | -1.75 | 0.79 | pågår |
