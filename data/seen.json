@@ -1295,7 +1295,14 @@
 "urn:tag:sec.gov,2008:accession-number=0001477932-26-006438",
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-118508",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-112169",
-"urn:tag:sec.gov,2008:accession-number=0001477932-26-006437"
+"urn:tag:sec.gov,2008:accession-number=0001477932-26-006437",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048288",
+"urn:tag:sec.gov,2008:accession-number=0002001557-26-000198",
+"urn:tag:sec.gov,2008:accession-number=0000821026-26-000134",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-430681",
+"urn:tag:sec.gov,2008:accession-number=0001062993-26-005530",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112204",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112203"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1392,7 +1399,8 @@
 "http://www.fda.gov/drugs/medication-health-fraud/public-notification-green-lumber-contains-hidden-drug-ingredient",
 "http://www.fda.gov/drugs/resources-information-approved-drugs/other-cancer-accelerated-approvals",
 "http://www.fda.gov/drugs/news-events-human-drugs/notable-approvals-drugs",
-"http://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-once-weekly-insulin-type-2-diabetes-mellitus-pediatric-patients"
+"http://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-once-weekly-insulin-type-2-diabetes-mellitus-pediatric-patients",
+"http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-rare-disease-day-2027-03052027"
 ],
 "novel": [
 "Hibsago|10/20/2026",
