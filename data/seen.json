@@ -1472,7 +1472,9 @@
 "urn:tag:sec.gov,2008:accession-number=0001243429-26-000088",
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-048481",
 "urn:tag:sec.gov,2008:accession-number=0001331451-26-000198",
-"urn:tag:sec.gov,2008:accession-number=0001493152-26-048478"
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048478",
+"urn:tag:sec.gov,2008:accession-number=0001999371-26-023523",
+"urn:tag:sec.gov,2008:accession-number=0001580642-26-007100"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1580,7 +1582,8 @@
 "http://www.fda.gov/news-events/press-announcements/statement-improving-adverse-event-reporting-compounded-drugs-protect-patients",
 "http://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-talazoparib-enzalutamide-metastatic-androgen-pathway-modulation-naive-or-sensitive",
 "http://www.fda.gov/industry/generic-drug-user-fee-amendments/generic-drug-facilities-sites-and-organization-lists",
-"http://www.fda.gov/drugs/information-health-care-professionals-drugs/fda-drug-topics-webinars"
+"http://www.fda.gov/drugs/information-health-care-professionals-drugs/fda-drug-topics-webinars",
+"http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-glutathione-due-elevated-endotoxin-levels"
 ],
 "novel": [
 "Hibsago|10/20/2026",
