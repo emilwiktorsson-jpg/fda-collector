@@ -1452,7 +1452,10 @@
 "urn:tag:sec.gov,2008:accession-number=0000950103-26-016136",
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-118609",
 "urn:tag:sec.gov,2008:accession-number=0001171843-26-006806",
-"urn:tag:sec.gov,2008:accession-number=0001171843-26-006807"
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006807",
+"urn:tag:sec.gov,2008:accession-number=0000318300-26-000235",
+"urn:tag:sec.gov,2008:accession-number=0000726854-26-000190",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112356"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1556,7 +1559,8 @@
 "http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/expiration-date-extension-north-american-coral-snake-antivenin-micrurus-fulvius-equine-origin-lot-1",
 "http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/important-information-human-cell-tissue-and-cellular-and-tissue-based-product-hctp-establishments-3",
 "http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-takes-action-new-boxed-warning-adzynma-enzyme-replacement-therapy-congenital-thrombotic",
-"http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/calendar-year-2026-voluntary-lot-withdrawals-immune-globulin-intravenous-igiv-and-immune-globulin"
+"http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/calendar-year-2026-voluntary-lot-withdrawals-immune-globulin-intravenous-igiv-and-immune-globulin",
+"http://www.fda.gov/news-events/press-announcements/statement-improving-adverse-event-reporting-compounded-drugs-protect-patients"
 ],
 "novel": [
 "Hibsago|10/20/2026",
