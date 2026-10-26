@@ -1,12 +1,12 @@
-# Signalutvärdering (uppdaterad 2026-10-26 21:45 sv)
+# Signalutvärdering (uppdaterad 2026-10-26 22:15 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (9 st)
+## Alla signaler – GODKÄNT (10 st)
 
 - Upptäcktsfördröjning: median 37 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +1.0 % snitt, +0.2 % median, 4/8 positiva
-- 15 min efter köp: -0.4 % snitt, +0.0 % median, 3/9 positiva
+- Redan rört sig före köp: +5.9 % snitt, +0.5 % median, 5/9 positiva
+- 15 min efter köp: +0.4 % snitt, +0.0 % median, 4/10 positiva
 - 60 min efter köp: -0.4 % snitt, +0.0 % median, 2/9 positiva
 - Bästa inom 60 min: +1.0 % snitt, +0.7 % median, 6/9 positiva
 - Dagens stängning: -2.2 % snitt, -2.5 % median, 2/8 positiva
@@ -26,9 +26,9 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 10-26 21:45 | CTXR | GODKÄNT | 39 min | – | – | – | väntar på öppning |
-| 10-26 21:45 | CTOR | GODKÄNT | 39 min | – | – | – | väntar på öppning |
-| 10-26 21:45 | SNTI | GODKÄNT | 28 min | – | – | – | väntar på öppning |
+| 10-26 21:45 | CTXR | GODKÄNT | 39 min | – | – | – | väntar på data |
+| 10-26 21:45 | CTOR | GODKÄNT | 39 min | – | – | – | väntar på data |
+| 10-26 21:45 | SNTI | GODKÄNT | 28 min | 44.59 | – | – | pågår |
 | 10-26 11:32 | CLYM | GODKÄNT | 8 min | – | 0.00 | – | pågår |
 | 10-23 14:50 | AARD | STOPP | 12 min | -0.33 | -28.11 | -53.52 | pågår |
 | 10-22 23:16 | PROF | GODKÄNT | 31 min | 0.52 | -1.64 | -3.97 | pågår |
