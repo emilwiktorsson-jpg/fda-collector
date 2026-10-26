@@ -1462,7 +1462,13 @@
 "urn:tag:sec.gov,2008:accession-number=0000950142-26-002840",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-009141",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-009139",
-"urn:tag:sec.gov,2008:accession-number=0001628280-26-067189"
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-067189",
+"urn:tag:sec.gov,2008:accession-number=0000912767-26-000052",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033488",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048462",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112379",
+"urn:tag:sec.gov,2008:accession-number=0001062993-26-005544",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006813"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1567,7 +1573,10 @@
 "http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/important-information-human-cell-tissue-and-cellular-and-tissue-based-product-hctp-establishments-3",
 "http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-takes-action-new-boxed-warning-adzynma-enzyme-replacement-therapy-congenital-thrombotic",
 "http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/calendar-year-2026-voluntary-lot-withdrawals-immune-globulin-intravenous-igiv-and-immune-globulin",
-"http://www.fda.gov/news-events/press-announcements/statement-improving-adverse-event-reporting-compounded-drugs-protect-patients"
+"http://www.fda.gov/news-events/press-announcements/statement-improving-adverse-event-reporting-compounded-drugs-protect-patients",
+"http://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-talazoparib-enzalutamide-metastatic-androgen-pathway-modulation-naive-or-sensitive",
+"http://www.fda.gov/industry/generic-drug-user-fee-amendments/generic-drug-facilities-sites-and-organization-lists",
+"http://www.fda.gov/drugs/information-health-care-professionals-drugs/fda-drug-topics-webinars"
 ],
 "novel": [
 "Hibsago|10/20/2026",
