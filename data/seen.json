@@ -1859,7 +1859,10 @@
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-433580",
 "urn:tag:sec.gov,2008:accession-number=0001521945-26-000106",
 "urn:tag:sec.gov,2008:accession-number=0000894671-26-000065",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-112826"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112826",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-433741",
+"urn:tag:sec.gov,2008:accession-number=0001692951-26-000200",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-006849"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1986,7 +1989,8 @@
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/zubb-dietary-supplement-may-be-harmful-due-hidden-ingredient",
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications",
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/demograss-premier-may-be-harmful-due-hidden-ingredient",
-"http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/amgen-inc-739641-08122026"
+"http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/amgen-inc-739641-08122026",
+"http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-manuals/manual-compliance-policy-guides"
 ],
 "novel": [
 "Hibsago|10/20/2026",
