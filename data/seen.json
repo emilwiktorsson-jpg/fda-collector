@@ -2035,7 +2035,18 @@
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-112949",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-067631",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-067629",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-112943"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-112943",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033667",
+"urn:tag:sec.gov,2008:accession-number=0001185198-26-000013",
+"urn:tag:sec.gov,2008:accession-number=0001477932-26-006474",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-119231",
+"urn:tag:sec.gov,2008:accession-number=0001437749-26-033664",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-434465",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-434452",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048749",
+"urn:tag:sec.gov,2008:accession-number=0001062993-26-005571",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-048747",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-119225"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -2163,7 +2174,8 @@
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications",
 "http://www.fda.gov/drugs/medication-health-fraud-notifications/demograss-premier-may-be-harmful-due-hidden-ingredient",
 "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/amgen-inc-739641-08122026",
-"http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-manuals/manual-compliance-policy-guides"
+"http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-manuals/manual-compliance-policy-guides",
+"http://www.fda.gov/advisory-committees/peripheral-and-central-nervous-system-drugs-advisory-committee/peripheral-and-central-nervous-system-drugs-advisory-committee-charter"
 ],
 "novel": [
 "Hibsago|10/20/2026",
