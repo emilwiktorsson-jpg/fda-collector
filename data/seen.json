@@ -1838,7 +1838,16 @@
 "urn:tag:sec.gov,2008:accession-number=0001325878-26-000220",
 "urn:tag:sec.gov,2008:accession-number=0001437749-26-033582",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-067458",
-"urn:tag:sec.gov,2008:accession-number=0001193125-26-433246"
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-433246",
+"urn:tag:sec.gov,2008:accession-number=0001316944-26-000173",
+"urn:tag:sec.gov,2008:accession-number=0001331451-26-000200",
+"urn:tag:sec.gov,2008:accession-number=0001331465-26-000193",
+"urn:tag:sec.gov,2008:accession-number=0000939057-26-000279",
+"urn:tag:sec.gov,2008:accession-number=0001062993-26-005562",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-119043",
+"urn:tag:sec.gov,2008:accession-number=0001654954-26-009158",
+"urn:tag:sec.gov,2008:accession-number=0001027552-26-000124",
+"urn:tag:sec.gov,2008:accession-number=0001185185-26-005021"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -1961,7 +1970,10 @@
 "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/beaute-bounty-729163-09252026",
 "http://www.fda.gov/regulatory-information/search-fda-guidance-documents/electronic-submission-template-investigational-device-exemption-ide-applications",
 "http://www.fda.gov/vaccines-blood-biologics/biologics-guidances/cellular-gene-therapy-guidances",
-"http://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval"
+"http://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/zubb-dietary-supplement-may-be-harmful-due-hidden-ingredient",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/demograss-premier-may-be-harmful-due-hidden-ingredient"
 ],
 "novel": [
 "Hibsago|10/20/2026",
