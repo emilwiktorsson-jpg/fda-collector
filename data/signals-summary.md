@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-10-28 11:35 sv)
+# Signalutvärdering (uppdaterad 2026-10-28 17:50 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -26,6 +26,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
+| 10-28 17:50 | PVLA | GODKÄNT | 321 min | – | – | – | väntar på öppning |
 | 10-27 12:47 | KNSA | GODKÄNT | 14 min | 6.67 | 1.91 | 8.78 | pågår |
 | 10-26 21:45 | CTXR | GODKÄNT | 39 min | -2.05 | 0.00 | 2.02 | klar |
 | 10-26 21:45 | CTOR | GODKÄNT | 39 min | -8.33 | 0.05 | 8.36 | klar |
@@ -40,4 +41,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 10-21 15:36 | INMB | GODKÄNT | 36 min | -2.01 | -0.30 | -2.72 | klar |
 | 10-21 14:12 | ABT | GODKÄNT | 37 min | -1.28 | 0.93 | 2.47 | klar |
 | 10-21 09:17 | SRZN | GODKÄNT | 613 min | 3.02 | -2.32 | -2.24 | klar |
-| 10-21 09:17 | IKT | GODKÄNT | 620 min | -0.58 | 1.17 | -2.92 | klar |
