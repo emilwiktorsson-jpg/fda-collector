@@ -2428,7 +2428,9 @@
 "urn:tag:sec.gov,2008:accession-number=0001292814-26-005026",
 "urn:tag:sec.gov,2008:accession-number=0002004711-26-000021",
 "urn:tag:sec.gov,2008:accession-number=0001376474-26-000676",
-"urn:tag:sec.gov,2008:accession-number=0001193125-26-435766"
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-435766",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-119706",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-067952"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -2567,7 +2569,9 @@
 "http://www.fda.gov/drugs/cder-small-business-industry-assistance-sbia/search-regulatory-references-drugs",
 "http://www.fda.gov/drugs/news-events-human-drugs/quality-and-regulatory-predictability-shaping-usp-standards-12112025",
 "http://www.fda.gov/drugs/biosimilars/biosimilar-product-information",
-"http://www.fda.gov/drugs/medication-health-fraud/questions-and-answers-reumofan-plus-and-reumofan-plus-premium"
+"http://www.fda.gov/drugs/medication-health-fraud/questions-and-answers-reumofan-plus-and-reumofan-plus-premium",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/ort-flx-may-be-harmful-due-hidden-ingredients",
+"http://www.fda.gov/drugs/medication-health-fraud-notifications/rx7-articulaciones-may-be-harmful-due-hidden-ingredients"
 ],
 "novel": [
 "Hibsago|10/20/2026",
@@ -2621,6 +2625,7 @@
 "reminded": [
 "PHAR|2026-10-24|1|leniolisib",
 "PHAR|2026-10-24|0|leniolisib",
-"GSK|2026-10-26|0|bepirovirsen"
+"GSK|2026-10-26|0|bepirovirsen",
+"INO|2026-10-30|1|INO-3107"
 ]
 }
