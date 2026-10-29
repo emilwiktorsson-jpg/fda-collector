@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-10-29 17:35 sv)
+# Signalutvärdering (uppdaterad 2026-10-29 22:26 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (14 st)
+## Alla signaler – GODKÄNT (15 st)
 
 - Upptäcktsfördröjning: median 39 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +4.2 % snitt, +0.5 % median, 7/13 positiva
-- 15 min efter köp: +0.2 % snitt, +0.0 % median, 4/14 positiva
-- 60 min efter köp: +0.5 % snitt, +0.0 % median, 6/14 positiva
-- Bästa inom 60 min: +2.7 % snitt, +1.1 % median, 10/14 positiva
+- Redan rört sig före köp: +3.9 % snitt, +0.2 % median, 7/14 positiva
+- 15 min efter köp: +0.2 % snitt, +0.0 % median, 4/15 positiva
+- 60 min efter köp: +0.5 % snitt, +0.0 % median, 7/15 positiva
+- Bästa inom 60 min: +2.6 % snitt, +1.0 % median, 11/15 positiva
 - Dagens stängning: -2.6 % snitt, -2.3 % median, 6/14 positiva
 - Nästa dags stängning: -1.0 % snitt, -4.1 % median, 4/13 positiva
 
@@ -26,7 +26,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 10-29 17:35 | ESTA | GODKÄNT | 250 min | – | – | – | väntar på öppning |
+| 10-29 17:35 | ESTA | GODKÄNT | 250 min | -0.23 | 0.68 | – | pågår |
 | 10-28 17:50 | PVLA | GODKÄNT | 321 min | 6.03 | 0.56 | 3.04 | pågår |
 | 10-27 12:47 | KNSA | GODKÄNT | 14 min | 6.67 | 1.91 | 8.78 | klar |
 | 10-26 21:45 | CTXR | GODKÄNT | 39 min | -2.05 | 0.00 | 2.02 | klar |
