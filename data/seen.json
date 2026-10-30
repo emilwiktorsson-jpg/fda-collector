@@ -2772,7 +2772,10 @@
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-049228",
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-437439",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-068117",
-"urn:tag:sec.gov,2008:accession-number=0001104659-26-120073"
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-120073",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-113912",
+"urn:tag:sec.gov,2008:accession-number=0001185185-26-005079",
+"urn:tag:sec.gov,2008:accession-number=0001493152-26-049312"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -2988,6 +2991,7 @@
 "PHAR|2026-10-24|1|leniolisib",
 "PHAR|2026-10-24|0|leniolisib",
 "GSK|2026-10-26|0|bepirovirsen",
-"INO|2026-10-30|1|INO-3107"
+"INO|2026-10-30|1|INO-3107",
+"INO|2026-10-30|0|INO-3107"
 ]
 }
