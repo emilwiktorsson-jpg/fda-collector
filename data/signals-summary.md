@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-11-02 20:58 sv)
+# Signalutvärdering (uppdaterad 2026-11-03 03:05 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (15 st)
+## Alla signaler – GODKÄNT (17 st)
 
 - Upptäcktsfördröjning: median 39 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +3.9 % snitt, +0.2 % median, 7/14 positiva
-- 15 min efter köp: +0.2 % snitt, +0.0 % median, 4/15 positiva
-- 60 min efter köp: +0.5 % snitt, +0.0 % median, 7/15 positiva
-- Bästa inom 60 min: +2.6 % snitt, +1.0 % median, 11/15 positiva
+- Redan rört sig före köp: +3.7 % snitt, +0.2 % median, 8/16 positiva
+- 15 min efter köp: -0.3 % snitt, +0.0 % median, 4/17 positiva
+- 60 min efter köp: -0.4 % snitt, +0.0 % median, 7/17 positiva
+- Bästa inom 60 min: +2.3 % snitt, +0.9 % median, 12/17 positiva
 - Dagens stängning: -2.7 % snitt, -2.3 % median, 6/15 positiva
 - Nästa dags stängning: -1.3 % snitt, -4.1 % median, 5/15 positiva
 
@@ -22,12 +22,23 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - Dagens stängning: -42.6 % snitt, -53.5 % median, 0/3 positiva
 - Nästa dags stängning: -48.2 % snitt, -63.9 % median, 0/3 positiva
 
+## Bevakade bolag (watch = 1) – GODKÄNT (1 st)
+
+- Upptäcktsfördröjning: median 463 min, max 463 min (SEC/FDA-tid -> upptäckt)
+- Redan rört sig före köp: +8.0 % snitt, +8.0 % median, 1/1 positiva
+- 15 min efter köp: -7.9 % snitt, -7.9 % median, 0/1 positiva
+- 60 min efter köp: -12.1 % snitt, -12.1 % median, 0/1 positiva
+- Bästa inom 60 min: +0.0 % snitt, -0.0 % median, 0/1 positiva
+- Dagens stängning: –
+- Nästa dags stängning: –
+
 ## Senaste 15
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-02 20:58 | NRXP | GODKÄNT | 412 min | – | – | – | väntar på öppning |
-| 11-02 20:58 | INO | GODKÄNT | 463 min | – | – | – | väntar på öppning |
+| 11-03 03:05 | RXRX | GODKÄNT | 273 min | – | – | – | väntar på öppning |
+| 11-02 20:58 | NRXP | GODKÄNT | 412 min | -3.38 | -2.35 | – | pågår |
+| 11-02 20:58 | INO | GODKÄNT | 463 min | 8.01 | -12.05 | – | pågår |
 | 10-29 17:35 | ESTA | GODKÄNT | 250 min | -0.23 | 0.68 | -3.42 | klar |
 | 10-28 17:50 | PVLA | GODKÄNT | 321 min | 6.03 | 0.56 | 3.04 | klar |
 | 10-27 12:47 | KNSA | GODKÄNT | 14 min | 6.67 | 1.91 | 8.78 | klar |
@@ -40,4 +51,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 10-22 22:45 | AARD | STOPP | 28 min | 26.82 | -2.59 | -72.25 | klar |
 | 10-22 13:43 | ABUS | STOPP | 12 min | -0.69 | 0.91 | -2.09 | klar |
 | 10-22 12:25 | SUPN | GODKÄNT | 558 min | 1.29 | -1.75 | 0.79 | klar |
-| 10-21 22:30 | IONS | GODKÄNT | 15 min | -0.07 | 0.00 | -2.34 | klar |
