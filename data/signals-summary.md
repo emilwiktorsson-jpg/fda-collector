@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-04 05:43 sv)
+# Signalutvärdering (uppdaterad 2026-11-04 18:44 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -9,8 +9,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.3 % snitt, +0.0 % median, 4/18 positiva
 - 60 min efter köp: -0.3 % snitt, +0.0 % median, 8/18 positiva
 - Bästa inom 60 min: +2.2 % snitt, +0.9 % median, 13/18 positiva
-- Dagens stängning: -3.2 % snitt, -2.4 % median, 6/17 positiva
-- Nästa dags stängning: -1.3 % snitt, -4.1 % median, 5/15 positiva
+- Dagens stängning: -3.2 % snitt, -2.5 % median, 6/18 positiva
+- Nästa dags stängning: -2.4 % snitt, -4.1 % median, 6/17 positiva
 
 ## Alla signaler – STOPP (3 st)
 
@@ -30,15 +30,15 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 60 min efter köp: -12.1 % snitt, -12.1 % median, 0/1 positiva
 - Bästa inom 60 min: +0.0 % snitt, -0.0 % median, 0/1 positiva
 - Dagens stängning: -12.5 % snitt, -12.5 % median, 0/1 positiva
-- Nästa dags stängning: –
+- Nästa dags stängning: -23.1 % snitt, -23.1 % median, 0/1 positiva
 
 ## Senaste 15
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-03 03:05 | RXRX | GODKÄNT | 273 min | -0.52 | 0.61 | – | pågår |
-| 11-02 20:58 | NRXP | GODKÄNT | 412 min | -3.38 | -2.35 | -2.35 | pågår |
-| 11-02 20:58 | INO | GODKÄNT | 463 min | 8.01 | -12.05 | -12.50 | pågår |
+| 11-03 03:05 | RXRX | GODKÄNT | 273 min | -0.52 | 0.61 | -3.41 | pågår |
+| 11-02 20:58 | NRXP | GODKÄNT | 412 min | -3.38 | -2.35 | -2.35 | klar |
+| 11-02 20:58 | INO | GODKÄNT | 463 min | 8.01 | -12.05 | -12.50 | klar |
 | 10-29 17:35 | ESTA | GODKÄNT | 250 min | -0.23 | 0.68 | -3.42 | klar |
 | 10-28 17:50 | PVLA | GODKÄNT | 321 min | 6.03 | 0.56 | 3.04 | klar |
 | 10-27 12:47 | KNSA | GODKÄNT | 14 min | 6.67 | 1.91 | 8.78 | klar |
