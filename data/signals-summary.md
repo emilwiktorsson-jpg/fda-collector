@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-05 05:58 sv)
+# Signalutvärdering (uppdaterad 2026-11-05 18:51 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -10,7 +10,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 60 min efter köp: -0.3 % snitt, +0.0 % median, 8/18 positiva
 - Bästa inom 60 min: +2.2 % snitt, +0.9 % median, 13/18 positiva
 - Dagens stängning: -3.2 % snitt, -2.5 % median, 6/18 positiva
-- Nästa dags stängning: -2.4 % snitt, -4.1 % median, 6/17 positiva
+- Nästa dags stängning: -2.2 % snitt, -3.3 % median, 7/18 positiva
 
 ## Alla signaler – STOPP (3 st)
 
@@ -36,7 +36,9 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-03 03:05 | RXRX | GODKÄNT | 273 min | -0.52 | 0.61 | -3.41 | pågår |
+| 11-05 18:51 | FLNA | STOPP | 281 min | – | – | – | väntar på öppning |
+| 11-05 18:51 | DWTX | GODKÄNT | 246 min | – | – | – | väntar på öppning |
+| 11-03 03:05 | RXRX | GODKÄNT | 273 min | -0.52 | 0.61 | -3.41 | klar |
 | 11-02 20:58 | NRXP | GODKÄNT | 412 min | -3.38 | -2.35 | -2.35 | klar |
 | 11-02 20:58 | INO | GODKÄNT | 463 min | 8.01 | -12.05 | -12.50 | klar |
 | 10-29 17:35 | ESTA | GODKÄNT | 250 min | -0.23 | 0.68 | -3.42 | klar |
@@ -49,5 +51,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 10-23 14:50 | AARD | STOPP | 12 min | -0.33 | -28.11 | -53.52 | klar |
 | 10-22 23:16 | PROF | GODKÄNT | 31 min | 0.52 | -1.64 | -3.97 | klar |
 | 10-22 22:45 | AARD | STOPP | 28 min | 26.82 | -2.59 | -72.25 | klar |
-| 10-22 13:43 | ABUS | STOPP | 12 min | -0.69 | 0.91 | -2.09 | klar |
-| 10-22 12:25 | SUPN | GODKÄNT | 558 min | 1.29 | -1.75 | 0.79 | klar |
