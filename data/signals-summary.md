@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-11-06 18:09 sv)
+# Signalutvärdering (uppdaterad 2026-11-06 23:07 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (19 st)
+## Alla signaler – GODKÄNT (21 st)
 
-- Upptäcktsfördröjning: median 246 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +2.3 % snitt, -0.2 % median, 8/18 positiva
-- 15 min efter köp: -0.3 % snitt, +0.0 % median, 4/19 positiva
-- 60 min efter köp: -0.3 % snitt, +0.0 % median, 8/19 positiva
-- Bästa inom 60 min: +2.1 % snitt, +0.8 % median, 13/19 positiva
+- Upptäcktsfördröjning: median 250 min, max 661 min (SEC/FDA-tid -> upptäckt)
+- Redan rört sig före köp: +1.2 % snitt, -0.2 % median, 9/20 positiva
+- 15 min efter köp: -0.3 % snitt, +0.0 % median, 6/21 positiva
+- 60 min efter köp: -0.5 % snitt, +0.0 % median, 8/21 positiva
+- Bästa inom 60 min: +2.0 % snitt, +0.8 % median, 15/21 positiva
 - Dagens stängning: -2.7 % snitt, -2.4 % median, 7/19 positiva
 - Nästa dags stängning: -2.2 % snitt, -3.3 % median, 7/18 positiva
 
@@ -36,8 +36,9 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-06 18:09 | MRNA | GODKÄNT | 322 min | – | – | – | väntar på öppning |
-| 11-06 18:09 | ANIK | GODKÄNT | 289 min | – | – | – | väntar på öppning |
+| 11-06 23:07 | LLY | GODKÄNT | 9 min | – | – | – | väntar på öppning |
+| 11-06 18:09 | MRNA | GODKÄNT | 322 min | 3.17 | -2.14 | – | pågår |
+| 11-06 18:09 | ANIK | GODKÄNT | 289 min | -20.43 | -2.28 | – | pågår |
 | 11-05 18:51 | FLNA | STOPP | 281 min | -16.96 | 0.25 | -5.26 | pågår |
 | 11-05 18:51 | DWTX | GODKÄNT | 246 min | -16.55 | -0.00 | 6.51 | pågår |
 | 11-03 03:05 | RXRX | GODKÄNT | 273 min | -0.52 | 0.61 | -3.41 | klar |
@@ -50,4 +51,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 10-26 21:45 | CTOR | GODKÄNT | 39 min | -8.33 | 0.05 | 8.36 | klar |
 | 10-26 21:45 | SNTI | GODKÄNT | 28 min | 44.36 | 8.30 | -29.52 | klar |
 | 10-26 11:32 | CLYM | GODKÄNT | 8 min | – | 0.00 | -11.72 | klar |
-| 10-23 14:50 | AARD | STOPP | 12 min | -0.33 | -28.11 | -53.52 | klar |
