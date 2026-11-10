@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-10 03:50 sv)
+# Signalutvärdering (uppdaterad 2026-11-10 06:51 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -9,8 +9,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.3 % snitt, +0.0 % median, 7/25 positiva
 - 60 min efter köp: -0.3 % snitt, +0.0 % median, 10/25 positiva
 - Bästa inom 60 min: +1.8 % snitt, +0.7 % median, 18/25 positiva
-- Dagens stängning: -2.9 % snitt, -2.7 % median, 7/21 positiva
-- Nästa dags stängning: -0.5 % snitt, -2.5 % median, 8/19 positiva
+- Dagens stängning: -2.4 % snitt, -2.4 % median, 9/25 positiva
+- Nästa dags stängning: -0.5 % snitt, -2.5 % median, 9/21 positiva
 
 ## Alla signaler – STOPP (4 st)
 
@@ -29,7 +29,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -3.9 % snitt, -3.9 % median, 1/2 positiva
 - 60 min efter köp: -5.8 % snitt, -5.8 % median, 1/2 positiva
 - Bästa inom 60 min: +0.3 % snitt, +0.3 % median, 1/2 positiva
-- Dagens stängning: -12.5 % snitt, -12.5 % median, 0/1 positiva
+- Dagens stängning: -5.2 % snitt, -5.2 % median, 1/2 positiva
 - Nästa dags stängning: -23.1 % snitt, -23.1 % median, 0/1 positiva
 
 ## Senaste 15
@@ -38,12 +38,12 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 |---|---|---|---|---|---|---|---|
 | 11-10 03:50 | RANI | GODKÄNT | 290 min | – | – | – | väntar på öppning |
 | 11-10 03:50 | LLY | GODKÄNT | 295 min | – | – | – | väntar på öppning |
-| 11-09 21:24 | PROF | GODKÄNT | 443 min | – | -0.00 | – | pågår |
-| 11-09 21:23 | HRTX | GODKÄNT | 429 min | -2.22 | 2.27 | – | pågår |
-| 11-07 02:55 | AZN | GODKÄNT | 113 min | 1.22 | -0.63 | – | pågår |
-| 11-06 23:07 | LLY | GODKÄNT | 9 min | 2.23 | 0.38 | – | pågår |
-| 11-06 18:09 | MRNA | GODKÄNT | 322 min | 3.17 | -2.14 | -3.19 | pågår |
-| 11-06 18:09 | ANIK | GODKÄNT | 289 min | -20.43 | -2.28 | -5.40 | pågår |
+| 11-09 21:24 | PROF | GODKÄNT | 443 min | – | -0.00 | -0.00 | pågår |
+| 11-09 21:23 | HRTX | GODKÄNT | 429 min | -2.22 | 2.27 | -2.98 | pågår |
+| 11-07 02:55 | AZN | GODKÄNT | 113 min | 1.22 | -0.63 | 0.64 | pågår |
+| 11-06 23:07 | LLY | GODKÄNT | 9 min | 2.23 | 0.38 | 2.01 | pågår |
+| 11-06 18:09 | MRNA | GODKÄNT | 322 min | 3.17 | -2.14 | -3.19 | klar |
+| 11-06 18:09 | ANIK | GODKÄNT | 289 min | -20.43 | -2.28 | -5.40 | klar |
 | 11-05 18:51 | FLNA | STOPP | 281 min | -16.96 | 0.25 | -5.26 | klar |
 | 11-05 18:51 | DWTX | GODKÄNT | 246 min | -16.55 | -0.00 | 6.51 | klar |
 | 11-03 03:05 | RXRX | GODKÄNT | 273 min | -0.52 | 0.61 | -3.41 | klar |
