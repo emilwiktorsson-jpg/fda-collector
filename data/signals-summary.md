@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-11-09 21:24 sv)
+# Signalutvärdering (uppdaterad 2026-11-10 03:50 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (23 st)
+## Alla signaler – GODKÄNT (25 st)
 
-- Upptäcktsfördröjning: median 246 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +1.3 % snitt, +0.2 % median, 11/22 positiva
-- 15 min efter köp: -0.3 % snitt, +0.0 % median, 7/23 positiva
-- 60 min efter köp: -0.5 % snitt, +0.0 % median, 9/23 positiva
-- Bästa inom 60 min: +1.9 % snitt, +0.7 % median, 16/23 positiva
+- Upptäcktsfördröjning: median 250 min, max 661 min (SEC/FDA-tid -> upptäckt)
+- Redan rört sig före köp: +1.1 % snitt, -0.1 % median, 11/23 positiva
+- 15 min efter köp: -0.3 % snitt, +0.0 % median, 7/25 positiva
+- 60 min efter köp: -0.3 % snitt, +0.0 % median, 10/25 positiva
+- Bästa inom 60 min: +1.8 % snitt, +0.7 % median, 18/25 positiva
 - Dagens stängning: -2.9 % snitt, -2.7 % median, 7/21 positiva
 - Nästa dags stängning: -0.5 % snitt, -2.5 % median, 8/19 positiva
 
@@ -36,8 +36,10 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-09 21:24 | PROF | GODKÄNT | 443 min | – | – | – | väntar på öppning |
-| 11-09 21:23 | HRTX | GODKÄNT | 429 min | – | – | – | väntar på öppning |
+| 11-10 03:50 | RANI | GODKÄNT | 290 min | – | – | – | väntar på öppning |
+| 11-10 03:50 | LLY | GODKÄNT | 295 min | – | – | – | väntar på öppning |
+| 11-09 21:24 | PROF | GODKÄNT | 443 min | – | -0.00 | – | pågår |
+| 11-09 21:23 | HRTX | GODKÄNT | 429 min | -2.22 | 2.27 | – | pågår |
 | 11-07 02:55 | AZN | GODKÄNT | 113 min | 1.22 | -0.63 | – | pågår |
 | 11-06 23:07 | LLY | GODKÄNT | 9 min | 2.23 | 0.38 | – | pågår |
 | 11-06 18:09 | MRNA | GODKÄNT | 322 min | 3.17 | -2.14 | -3.19 | pågår |
@@ -49,5 +51,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-02 20:58 | INO | GODKÄNT | 463 min | 8.01 | -12.05 | -12.50 | klar |
 | 10-29 17:35 | ESTA | GODKÄNT | 250 min | -0.23 | 0.68 | -3.42 | klar |
 | 10-28 17:50 | PVLA | GODKÄNT | 321 min | 6.03 | 0.56 | 3.04 | klar |
-| 10-27 12:47 | KNSA | GODKÄNT | 14 min | 6.67 | 1.91 | 8.78 | klar |
-| 10-26 21:45 | CTXR | GODKÄNT | 39 min | -2.05 | 0.00 | 2.02 | klar |
