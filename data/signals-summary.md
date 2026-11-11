@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-11 03:09 sv)
+# Signalutvärdering (uppdaterad 2026-11-11 05:35 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -7,7 +7,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - Upptäcktsfördröjning: median 260 min, max 661 min (SEC/FDA-tid -> upptäckt)
 - Redan rört sig före köp: +1.7 % snitt, +0.5 % median, 19/35 positiva
 - 15 min efter köp: -0.1 % snitt, +0.0 % median, 14/37 positiva
-- 60 min efter köp: -0.1 % snitt, +0.0 % median, 18/37 positiva
+- 60 min efter köp: -0.6 % snitt, -0.0 % median, 18/37 positiva
 - Bästa inom 60 min: +1.8 % snitt, +0.7 % median, 29/37 positiva
 - Dagens stängning: -2.4 % snitt, -2.4 % median, 9/25 positiva
 - Nästa dags stängning: -0.5 % snitt, -2.5 % median, 9/21 positiva
@@ -18,7 +18,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - Redan rört sig före köp: -25.0 % snitt, -25.0 % median, 0/1 positiva
 - 15 min efter köp: +0.0 % snitt, -0.0 % median, 0/1 positiva
 - 60 min efter köp: +0.0 % snitt, -0.0 % median, 0/1 positiva
-- Bästa inom 60 min: +0.0 % snitt, -0.0 % median, 0/1 positiva
+- Bästa inom 60 min: +120.0 % snitt, +120.0 % median, 1/1 positiva
 - Dagens stängning: –
 - Nästa dags stängning: –
 
@@ -50,7 +50,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-10 18:28 | PEPG | STOPP | 268 min | 5.93 | -4.38 | – | pågår |
 | 11-10 18:28 | ABUS | STOPP | 297 min | 3.28 | -0.98 | – | pågår |
 | 11-10 18:28 | DCTH | GODKÄNT | 256 min | 3.56 | -4.40 | – | pågår |
-| 11-10 18:28 | ADAPY | GODKÄNT | 19 min | 25.00 | 0.00 | – | pågår |
+| 11-10 18:28 | ADAPY | GODKÄNT | 19 min | 25.00 | -18.18 | – | pågår |
 | 11-10 18:28 | AZN | GODKÄNT | 255 min | -1.37 | 0.03 | – | pågår |
 | 11-10 18:28 | SRRK | GODKÄNT | 318 min | -6.20 | 0.05 | – | pågår |
 | 11-10 18:28 | IRD | GODKÄNT | 327 min | 2.77 | -1.38 | – | pågår |
