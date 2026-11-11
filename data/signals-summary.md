@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-10 23:29 sv)
+# Signalutvärdering (uppdaterad 2026-11-11 03:09 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -18,7 +18,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - Redan rört sig före köp: -25.0 % snitt, -25.0 % median, 0/1 positiva
 - 15 min efter köp: +0.0 % snitt, -0.0 % median, 0/1 positiva
 - 60 min efter köp: +0.0 % snitt, -0.0 % median, 0/1 positiva
-- Bästa inom 60 min: +120.0 % snitt, +120.0 % median, 1/1 positiva
+- Bästa inom 60 min: +0.0 % snitt, -0.0 % median, 0/1 positiva
 - Dagens stängning: –
 - Nästa dags stängning: –
 
