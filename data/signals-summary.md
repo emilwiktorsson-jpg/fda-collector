@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-11-12 18:55 sv)
+# Signalutvärdering (uppdaterad 2026-11-13 00:11 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (38 st)
+## Alla signaler – GODKÄNT (40 st)
 
 - Upptäcktsfördröjning: median 260 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +1.8 % snitt, +0.7 % median, 20/36 positiva
-- 15 min efter köp: -0.1 % snitt, +0.0 % median, 15/38 positiva
-- 60 min efter köp: -0.1 % snitt, +0.0 % median, 19/38 positiva
-- Bästa inom 60 min: +1.7 % snitt, +0.7 % median, 30/38 positiva
+- Redan rört sig före köp: +1.0 % snitt, +0.4 % median, 20/38 positiva
+- 15 min efter köp: -0.1 % snitt, +0.0 % median, 16/40 positiva
+- 60 min efter köp: +0.0 % snitt, +0.0 % median, 20/40 positiva
+- Bästa inom 60 min: +1.7 % snitt, +0.7 % median, 31/40 positiva
 - Dagens stängning: -1.4 % snitt, -0.1 % median, 17/38 positiva
 - Nästa dags stängning: +2.0 % snitt, +1.4 % median, 21/37 positiva
 
@@ -46,8 +46,10 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-12 18:55 | CELG-RI | GODKÄNT | 105 min | – | – | – | väntar på öppning |
-| 11-12 18:55 | TOVX | GODKÄNT | 284 min | – | – | – | väntar på öppning |
+| 11-13 00:11 | CV | GODKÄNT | 97 min | – | – | – | väntar på öppning |
+| 11-13 00:11 | NSPR | GODKÄNT | 86 min | – | – | – | väntar på öppning |
+| 11-12 18:55 | CELG-RI | GODKÄNT | 105 min | -22.22 | -0.00 | – | pågår |
+| 11-12 18:55 | TOVX | GODKÄNT | 284 min | -2.50 | 3.65 | – | pågår |
 | 11-10 23:29 | GOSS | GODKÄNT | 39 min | 3.79 | 0.06 | 10.97 | pågår |
 | 11-10 18:28 | PEPG | STOPP | 268 min | 5.93 | -4.38 | -12.27 | klar |
 | 11-10 18:28 | ABUS | STOPP | 297 min | 3.28 | -0.98 | -1.37 | klar |
@@ -59,5 +61,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-10 18:28 | TLSIW | GODKÄNT | 262 min | – | – | – | väntar på data |
 | 11-10 18:28 | TTRX | GODKÄNT | 263 min | -1.84 | 3.33 | 3.23 | klar |
 | 11-10 18:28 | CRBP | GODKÄNT | 260 min | 5.08 | 2.16 | 6.22 | klar |
-| 11-10 18:28 | MANE | GODKÄNT | 214 min | 4.27 | -0.16 | -0.26 | klar |
-| 11-10 18:28 | CINGW | CRL | 258 min | – | -0.00 | – | pågår |
