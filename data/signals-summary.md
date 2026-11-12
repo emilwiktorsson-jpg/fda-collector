@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-12 06:39 sv)
+# Signalutvärdering (uppdaterad 2026-11-12 18:55 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -15,7 +15,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 ## Alla signaler – CRL (1 st)
 
 - Upptäcktsfördröjning: median 258 min, max 258 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: -25.0 % snitt, -25.0 % median, 0/1 positiva
+- Redan rört sig före köp: –
 - 15 min efter köp: +0.0 % snitt, -0.0 % median, 0/1 positiva
 - 60 min efter köp: +0.0 % snitt, -0.0 % median, 0/1 positiva
 - Bästa inom 60 min: +0.0 % snitt, -0.0 % median, 0/1 positiva
@@ -46,6 +46,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
+| 11-12 18:55 | CELG-RI | GODKÄNT | 105 min | – | – | – | väntar på öppning |
+| 11-12 18:55 | TOVX | GODKÄNT | 284 min | – | – | – | väntar på öppning |
 | 11-10 23:29 | GOSS | GODKÄNT | 39 min | 3.79 | 0.06 | 10.97 | pågår |
 | 11-10 18:28 | PEPG | STOPP | 268 min | 5.93 | -4.38 | -12.27 | klar |
 | 11-10 18:28 | ABUS | STOPP | 297 min | 3.28 | -0.98 | -1.37 | klar |
@@ -58,6 +60,4 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-10 18:28 | TTRX | GODKÄNT | 263 min | -1.84 | 3.33 | 3.23 | klar |
 | 11-10 18:28 | CRBP | GODKÄNT | 260 min | 5.08 | 2.16 | 6.22 | klar |
 | 11-10 18:28 | MANE | GODKÄNT | 214 min | 4.27 | -0.16 | -0.26 | klar |
-| 11-10 18:28 | CINGW | CRL | 258 min | -25.00 | -0.00 | – | pågår |
-| 11-10 18:28 | LLY | GODKÄNT | 31 min | -0.02 | 0.19 | 0.85 | klar |
-| 11-10 18:28 | LQDA | GODKÄNT | 328 min | 0.85 | 3.84 | 6.82 | klar |
+| 11-10 18:28 | CINGW | CRL | 258 min | – | -0.00 | – | pågår |
