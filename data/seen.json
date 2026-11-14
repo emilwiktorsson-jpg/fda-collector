@@ -5354,7 +5354,8 @@
 "http://www.fda.gov/drugs/guidances-drugs/guidance-recap-podcast-assessing-effects-food-drugs-inds-and-ndas-clinical-pharmacology",
 "http://www.fda.gov/drugs/importation-program-under-section-804-fdc-act/section-804-importation-program-policies-and-authorizations",
 "http://www.fda.gov/drugs/cancer-approvals/fda-approves-durvalumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer",
-"http://www.fda.gov/vaccines-blood-biologics/cber-regulated-products-supporting-documents"
+"http://www.fda.gov/vaccines-blood-biologics/cber-regulated-products-supporting-documents",
+"http://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-treat-adults-primary-membranous-nephropathy"
 ],
 "novel": [
 "Hibsago|10/20/2026",
@@ -5415,6 +5416,9 @@
 "AGIO|2026-11-01|1|mitapivat",
 "SMMT|2026-11-14|1|ivonescimab",
 "BTAI|2026-11-14|1|Igalmi",
-"CYTK|2026-11-14|1|aficamten"
+"CYTK|2026-11-14|1|aficamten",
+"SMMT|2026-11-14|0|ivonescimab",
+"BTAI|2026-11-14|0|Igalmi",
+"CYTK|2026-11-14|0|aficamten"
 ]
 }
