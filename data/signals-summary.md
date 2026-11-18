@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-11-18 06:49 sv)
+# Signalutvärdering (uppdaterad 2026-11-18 19:38 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (48 st)
+## Alla signaler – GODKÄNT (49 st)
 
-- Upptäcktsfördröjning: median 263 min, max 661 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +0.5 % snitt, -0.0 % median, 22/45 positiva
-- 15 min efter köp: -0.2 % snitt, +0.0 % median, 18/48 positiva
-- 60 min efter köp: -0.3 % snitt, -0.0 % median, 21/48 positiva
-- Bästa inom 60 min: +1.5 % snitt, +0.6 % median, 37/48 positiva
+- Upptäcktsfördröjning: median 260 min, max 661 min (SEC/FDA-tid -> upptäckt)
+- Redan rört sig före köp: +0.5 % snitt, +0.2 % median, 23/46 positiva
+- 15 min efter köp: -0.3 % snitt, +0.0 % median, 18/49 positiva
+- 60 min efter köp: -0.4 % snitt, -0.0 % median, 21/49 positiva
+- Bästa inom 60 min: +1.5 % snitt, +0.6 % median, 37/49 positiva
 - Dagens stängning: -1.6 % snitt, -1.3 % median, 19/48 positiva
 - Nästa dags stängning: +0.6 % snitt, +1.0 % median, 24/46 positiva
 
@@ -46,7 +46,10 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-18 02:31 | CYDY | GODKÄNT | 238 min | – | – | – | väntar på öppning |
+| 11-18 19:38 | LTRN | GODKÄNT | 363 min | – | – | – | väntar på öppning |
+| 11-18 19:38 | RHHBY | GODKÄNT | – | – | – | – | väntar på öppning |
+| 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på öppning |
+| 11-18 02:31 | CYDY | GODKÄNT | 238 min | 2.20 | -3.80 | – | pågår |
 | 11-17 03:52 | RHHBY | GODKÄNT | 417 min | -1.28 | 0.27 | 0.12 | pågår |
 | 11-16 21:02 | RNTX | STOPP | 384 min | -29.75 | 2.59 | 2.59 | klar |
 | 11-16 21:02 | CGON | GODKÄNT | 407 min | -14.03 | -1.11 | -1.11 | klar |
@@ -58,6 +61,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-13 18:29 | AARD | STOPP | 252 min | -0.64 | -1.99 | -11.92 | klar |
 | 11-13 18:29 | FBIOP | GODKÄNT | 265 min | -1.52 | -1.72 | -2.79 | klar |
 | 11-13 18:29 | BFRIW | GODKÄNT | 260 min | – | – | – | väntar på data |
-| 11-13 00:11 | CV | GODKÄNT | 97 min | 0.72 | -3.72 | -4.51 | klar |
-| 11-13 00:11 | NSPR | GODKÄNT | 86 min | 3.95 | -2.63 | -5.28 | klar |
-| 11-12 18:55 | CELG-RI | GODKÄNT | 105 min | -22.22 | -0.00 | -0.00 | pågår |
