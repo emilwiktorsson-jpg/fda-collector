@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-19 06:48 sv)
+# Signalutvärdering (uppdaterad 2026-11-19 19:52 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -46,6 +46,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
+| 11-19 19:52 | TVRD | STOPP | 347 min | – | – | – | väntar på öppning |
+| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | – | – | väntar på öppning |
 | 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | pågår |
 | 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | -0.40 | pågår |
 | 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på data |
@@ -59,5 +61,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-13 23:49 | CINGW | CRL | 30 min | – | -2.94 | -47.06 | pågår |
 | 11-13 18:29 | HURA | GODKÄNT | 280 min | -2.76 | -2.13 | -1.42 | klar |
 | 11-13 18:29 | AARD | STOPP | 252 min | -0.64 | -1.99 | -11.92 | klar |
-| 11-13 18:29 | FBIOP | GODKÄNT | 265 min | -1.52 | -1.72 | -2.79 | klar |
-| 11-13 18:29 | BFRIW | GODKÄNT | 260 min | – | – | – | väntar på data |
