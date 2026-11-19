@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-19 01:45 sv)
+# Signalutvärdering (uppdaterad 2026-11-19 06:48 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -9,8 +9,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.3 % snitt, +0.0 % median, 19/51 positiva
 - 60 min efter köp: -0.5 % snitt, +0.0 % median, 21/51 positiva
 - Bästa inom 60 min: +1.4 % snitt, +0.5 % median, 38/51 positiva
-- Dagens stängning: -1.6 % snitt, -1.3 % median, 19/48 positiva
-- Nästa dags stängning: +0.6 % snitt, +1.0 % median, 24/46 positiva
+- Dagens stängning: -1.8 % snitt, -1.4 % median, 19/51 positiva
+- Nästa dags stängning: +0.6 % snitt, +0.8 % median, 24/47 positiva
 
 ## Alla signaler – CRL (3 st)
 
@@ -39,18 +39,18 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.9 % snitt, +0.1 % median, 6/7 positiva
 - 60 min efter köp: -1.1 % snitt, +0.2 % median, 5/7 positiva
 - Bästa inom 60 min: +0.9 % snitt, +0.3 % median, 6/7 positiva
-- Dagens stängning: -0.3 % snitt, +1.0 % median, 5/6 positiva
-- Nästa dags stängning: -0.5 % snitt, +1.4 % median, 4/5 positiva
+- Dagens stängning: -0.3 % snitt, +0.8 % median, 5/7 positiva
+- Nästa dags stängning: -0.6 % snitt, +1.3 % median, 4/6 positiva
 
 ## Senaste 15
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | – | pågår |
-| 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | – | pågår |
+| 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | pågår |
+| 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | -0.40 | pågår |
 | 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på data |
-| 11-18 02:31 | CYDY | GODKÄNT | 238 min | 2.20 | -3.80 | – | pågår |
-| 11-17 03:52 | RHHBY | GODKÄNT | 417 min | -1.28 | 0.27 | 0.12 | pågår |
+| 11-18 02:31 | CYDY | GODKÄNT | 238 min | 2.20 | -3.80 | -9.80 | pågår |
+| 11-17 03:52 | RHHBY | GODKÄNT | 417 min | -1.28 | 0.27 | 0.12 | klar |
 | 11-16 21:02 | RNTX | STOPP | 384 min | -29.75 | 2.59 | 2.59 | klar |
 | 11-16 21:02 | CGON | GODKÄNT | 407 min | -14.03 | -1.11 | -1.11 | klar |
 | 11-16 21:02 | APMD | GODKÄNT | 418 min | – | -1.87 | -1.87 | klar |
