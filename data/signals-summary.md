@@ -1,16 +1,16 @@
-# Signalutvärdering (uppdaterad 2026-11-20 06:37 sv)
+# Signalutvärdering (uppdaterad 2026-11-20 19:16 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (51 st)
+## Alla signaler – GODKÄNT (52 st)
 
-- Upptäcktsfördröjning: median 263 min, max 661 min (SEC/FDA-tid -> upptäckt)
+- Upptäcktsfördröjning: median 263 min, max 1058 min (SEC/FDA-tid -> upptäckt)
 - Redan rört sig före köp: +0.3 % snitt, -0.0 % median, 23/48 positiva
-- 15 min efter köp: -0.3 % snitt, +0.0 % median, 19/51 positiva
-- 60 min efter köp: -0.5 % snitt, +0.0 % median, 21/51 positiva
-- Bästa inom 60 min: +1.4 % snitt, +0.5 % median, 38/51 positiva
-- Dagens stängning: -1.8 % snitt, -1.4 % median, 19/51 positiva
-- Nästa dags stängning: +0.4 % snitt, -0.4 % median, 24/49 positiva
+- 15 min efter köp: -0.2 % snitt, +0.0 % median, 19/52 positiva
+- 60 min efter köp: -0.5 % snitt, +0.0 % median, 21/52 positiva
+- Bästa inom 60 min: +1.4 % snitt, +0.4 % median, 38/52 positiva
+- Dagens stängning: -1.7 % snitt, -1.3 % median, 19/52 positiva
+- Nästa dags stängning: +0.0 % snitt, -0.5 % median, 24/50 positiva
 
 ## Alla signaler – CRL (3 st)
 
@@ -29,7 +29,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -1.2 % snitt, -0.4 % median, 3/9 positiva
 - 60 min efter köp: -4.2 % snitt, -2.0 % median, 3/9 positiva
 - Bästa inom 60 min: +3.4 % snitt, +1.3 % median, 8/9 positiva
-- Dagens stängning: -19.5 % snitt, -8.6 % median, 1/8 positiva
+- Dagens stängning: -17.4 % snitt, -5.3 % median, 1/9 positiva
 - Nästa dags stängning: -21.9 % snitt, -7.0 % median, 2/8 positiva
 
 ## Bevakade bolag (watch = 1) – GODKÄNT (7 st)
@@ -46,9 +46,10 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-19 19:52 | TVRD | STOPP | 347 min | -5.94 | -3.16 | – | pågår |
-| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | – | – | väntar på data |
-| 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | pågår |
+| 11-20 19:16 | RNXT | GODKÄNT | 435 min | – | – | – | väntar på öppning |
+| 11-19 19:52 | TVRD | STOPP | 347 min | -5.94 | -3.16 | -0.42 | pågår |
+| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | pågår |
+| 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | klar |
 | 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | -0.40 | klar |
 | 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på data |
 | 11-18 02:31 | CYDY | GODKÄNT | 238 min | 2.20 | -3.80 | -9.80 | klar |
@@ -60,4 +61,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-13 23:49 | FEMY | GODKÄNT | 61 min | -4.17 | -4.35 | -7.25 | klar |
 | 11-13 23:49 | CINGW | CRL | 30 min | – | -2.94 | -47.06 | väntar på data |
 | 11-13 18:29 | HURA | GODKÄNT | 280 min | -2.76 | -2.13 | -1.42 | klar |
-| 11-13 18:29 | AARD | STOPP | 252 min | -0.64 | -1.99 | -11.92 | klar |
