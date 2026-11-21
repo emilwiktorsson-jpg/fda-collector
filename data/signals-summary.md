@@ -1,14 +1,14 @@
-# Signalutvärdering (uppdaterad 2026-11-20 19:16 sv)
+# Signalutvärdering (uppdaterad 2026-11-21 01:07 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
-## Alla signaler – GODKÄNT (52 st)
+## Alla signaler – GODKÄNT (53 st)
 
-- Upptäcktsfördröjning: median 263 min, max 1058 min (SEC/FDA-tid -> upptäckt)
-- Redan rört sig före köp: +0.3 % snitt, -0.0 % median, 23/48 positiva
-- 15 min efter köp: -0.2 % snitt, +0.0 % median, 19/52 positiva
-- 60 min efter köp: -0.5 % snitt, +0.0 % median, 21/52 positiva
-- Bästa inom 60 min: +1.4 % snitt, +0.4 % median, 38/52 positiva
+- Upptäcktsfördröjning: median 265 min, max 1058 min (SEC/FDA-tid -> upptäckt)
+- Redan rört sig före köp: +0.2 % snitt, -0.0 % median, 23/49 positiva
+- 15 min efter köp: -0.2 % snitt, +0.0 % median, 19/53 positiva
+- 60 min efter köp: -0.4 % snitt, -0.0 % median, 22/53 positiva
+- Bästa inom 60 min: +1.5 % snitt, +0.5 % median, 39/53 positiva
 - Dagens stängning: -1.7 % snitt, -1.3 % median, 19/52 positiva
 - Nästa dags stängning: +0.0 % snitt, -0.5 % median, 24/50 positiva
 
@@ -46,9 +46,10 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-20 19:16 | RNXT | GODKÄNT | 435 min | – | – | – | väntar på öppning |
+| 11-21 01:07 | BCLI | CRL | 127 min | – | – | – | väntar på öppning |
+| 11-20 19:16 | RNXT | GODKÄNT | 435 min | -1.99 | 2.20 | – | pågår |
 | 11-19 19:52 | TVRD | STOPP | 347 min | -5.94 | -3.16 | -0.42 | pågår |
-| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | pågår |
+| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | väntar på data |
 | 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | klar |
 | 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | -0.40 | klar |
 | 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på data |
@@ -60,4 +61,3 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-16 21:02 | UNCY | CRL | 333 min | 3.12 | -0.55 | 1.65 | klar |
 | 11-13 23:49 | FEMY | GODKÄNT | 61 min | -4.17 | -4.35 | -7.25 | klar |
 | 11-13 23:49 | CINGW | CRL | 30 min | – | -2.94 | -47.06 | väntar på data |
-| 11-13 18:29 | HURA | GODKÄNT | 280 min | -2.76 | -2.13 | -1.42 | klar |
