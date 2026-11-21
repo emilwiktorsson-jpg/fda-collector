@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-21 01:07 sv)
+# Signalutvärdering (uppdaterad 2026-11-21 06:30 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -9,7 +9,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.2 % snitt, +0.0 % median, 19/53 positiva
 - 60 min efter köp: -0.4 % snitt, -0.0 % median, 22/53 positiva
 - Bästa inom 60 min: +1.5 % snitt, +0.5 % median, 39/53 positiva
-- Dagens stängning: -1.7 % snitt, -1.3 % median, 19/52 positiva
+- Dagens stängning: -1.7 % snitt, -1.4 % median, 19/53 positiva
 - Nästa dags stängning: +0.0 % snitt, -0.5 % median, 24/50 positiva
 
 ## Alla signaler – CRL (3 st)
@@ -30,7 +30,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 60 min efter köp: -4.2 % snitt, -2.0 % median, 3/9 positiva
 - Bästa inom 60 min: +3.4 % snitt, +1.3 % median, 8/9 positiva
 - Dagens stängning: -17.4 % snitt, -5.3 % median, 1/9 positiva
-- Nästa dags stängning: -21.9 % snitt, -7.0 % median, 2/8 positiva
+- Nästa dags stängning: -19.0 % snitt, -5.3 % median, 3/9 positiva
 
 ## Bevakade bolag (watch = 1) – GODKÄNT (7 st)
 
@@ -47,9 +47,9 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
 | 11-21 01:07 | BCLI | CRL | 127 min | – | – | – | väntar på öppning |
-| 11-20 19:16 | RNXT | GODKÄNT | 435 min | -1.99 | 2.20 | – | pågår |
-| 11-19 19:52 | TVRD | STOPP | 347 min | -5.94 | -3.16 | -0.42 | pågår |
-| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | väntar på data |
+| 11-20 19:16 | RNXT | GODKÄNT | 435 min | -1.99 | 2.20 | -1.93 | pågår |
+| 11-19 19:52 | TVRD | STOPP | 347 min | -5.94 | -3.16 | -0.42 | klar |
+| 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | pågår |
 | 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | klar |
 | 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | -0.40 | klar |
 | 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på data |
