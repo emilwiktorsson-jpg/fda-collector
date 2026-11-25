@@ -2,16 +2,16 @@ name: collect
 
 on:
   schedule:
-    # Var 15:e minut, vardagar 10:00-23:45 UTC (12:00-01:45 svensk sommartid). SEC tar emot 8-K 06:00-22:00 ET;
-    # de flesta FDA-besked kommer 08:00-09:30 ET (före öppning) eller 16:00-18:00 ET (efter stängning).
-    - cron: "*/15 10-23 * * 1-5"
-    # Sena kvällsbesked (22:00-02:00 ET = 02:00-06:00 UTC fångas av nästa dags första körning)
-    - cron: "*/15 0-2 * * 2-6"
+    # Säkerhetsnät: startar om kedjan om den brutits. GitHub kör schemalagda jobb oregelbundet,
+    # så själva bevakningen sker i slingan nedan, inte via schemat.
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
+# En körning åt gången. En väntande körning startar när den pågående är klar.
 concurrency:
   group: collect
   cancel-in-progress: false
@@ -19,27 +19,58 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Samla och notifiera
+      - name: Samla, notifiera och spara i slinga
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
-        run: python collector.py
-      - name: Mät kursrörelse efter signaler (steg 1, inga order)
-        continue-on-error: true
-        timeout-minutes: 4
-        run: python pricetrack.py
-      - name: Spara data
+          LOOP_MINUTES: "320"    # hur länge en omgång pågår (jobbgränsen hos GitHub är 360 min)
+          POLL_ACTIVE: "150"     # sekunder mellan kontroller när SEC/FDA publicerar (vardagar 10:00-03:00 UTC)
+          POLL_IDLE: "900"       # sekunder mellan kontroller övrig tid
+          SAVE_EVERY: "1800"     # spara data minst så här ofta även utan nya signaler
         run: |
           git config user.name "fda-collector"
           git config user.email "actions@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet && echo "inget nytt" || git commit -m "data $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase origin main || true
-          git push
+          save() {
+            git add data/
+            if ! git diff --cached --quiet; then
+              git commit -q -m "data $(date -u +%Y-%m-%dT%H:%MZ)"
+              git pull -q --rebase origin main || true
+              git push -q || echo "push misslyckades, försöker igen nästa varv"
+            fi
+            LAST_SAVE=$(date +%s)
+          }
+          END=$(( $(date +%s) + LOOP_MINUTES * 60 ))
+          LAST_SAVE=$(date +%s)
+          N=0
+          while [ "$(date +%s)" -lt "$END" ]; do
+            N=$((N + 1))
+            python collector.py || echo "collector.py misslyckades (varv $N)"
+            # Kursuppföljning vart fjärde varv (steg 1, inga order)
+            if [ $((N % 4)) -eq 1 ]; then
+              timeout 240 python pricetrack.py || echo "pricetrack.py misslyckades (varv $N)"
+            fi
+            # Spara direkt vid ny signal, annars med jämna mellanrum
+            if [ -n "$(git status --porcelain data/events.csv data/signals.csv)" ] || [ $(( $(date +%s) - LAST_SAVE )) -ge "$SAVE_EVERY" ]; then
+              save
+            fi
+            H=$((10#$(date -u +%H)))
+            D=$(date -u +%u)
+            if { [ "$D" -le 5 ] && [ "$H" -ge 10 ]; } || { [ "$D" -ge 2 ] && [ "$D" -le 6 ] && [ "$H" -lt 3 ]; }; then
+              sleep "$POLL_ACTIVE"
+            else
+              sleep "$POLL_IDLE"
+            fi
+          done
+          save
+      - name: Starta nästa omgång
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run collect.yml --repo "$GITHUB_REPOSITORY" --ref main
