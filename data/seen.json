@@ -1,6 +1,5 @@
 {
 "sec": [
-"urn:tag:sec.gov,2008:accession-number=0001193125-26-443748",
 "urn:tag:sec.gov,2008:accession-number=0000842517-26-000238",
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-121350",
 "urn:tag:sec.gov,2008:accession-number=0001587732-26-000050",
@@ -4999,7 +4998,8 @@
 "urn:tag:sec.gov,2008:accession-number=0001692951-26-000232",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-010117",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-124079",
-"urn:tag:sec.gov,2008:accession-number=0001539497-26-003100"
+"urn:tag:sec.gov,2008:accession-number=0001539497-26-003100",
+"urn:tag:sec.gov,2008:accession-number=0001539497-26-003102"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -5446,7 +5446,8 @@
 "http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-cber-webinar-considerations-development-car-t-cell-products-03072024",
 "http://www.fda.gov/drugs/investigational-new-drug-application-ind/how-request-domperidone-expanded-access-use",
 "http://www.fda.gov/industry/phase-1-investigational-new-drug-ind-navigator/phase-1-ind-guidance-documents",
-"http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-cber-webinar-human-gene-therapy-products-incorporating-human-genome-editing-02292024"
+"http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-cber-webinar-human-gene-therapy-products-incorporating-human-genome-editing-02292024",
+"http://www.fda.gov/drugs/first-generic-drug-approvals/2018-first-generic-drug-approvals"
 ],
 "novel": [
 "Hibsago|10/20/2026",
