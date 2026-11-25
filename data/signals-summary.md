@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-25 04:42 sv)
+# Signalutvärdering (uppdaterad 2026-11-25 07:53 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -9,7 +9,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.2 % snitt, +0.0 % median, 21/58 positiva
 - 60 min efter köp: -0.3 % snitt, +0.0 % median, 27/58 positiva
 - Bästa inom 60 min: +1.5 % snitt, +0.6 % median, 44/58 positiva
-- Dagens stängning: -1.7 % snitt, -1.4 % median, 19/53 positiva
+- Dagens stängning: -1.3 % snitt, -0.3 % median, 24/58 positiva
 - Nästa dags stängning: +0.1 % snitt, -0.4 % median, 25/51 positiva
 
 ## Alla signaler – CRL (4 st)
@@ -20,7 +20,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 60 min efter köp: +2.6 % snitt, -0.3 % median, 1/4 positiva
 - Bästa inom 60 min: +5.6 % snitt, +1.0 % median, 2/4 positiva
 - Dagens stängning: -8.6 % snitt, +0.8 % median, 2/4 positiva
-- Nästa dags stängning: +1.6 % snitt, +1.6 % median, 1/1 positiva
+- Nästa dags stängning: +4.3 % snitt, +4.3 % median, 2/2 positiva
 
 ## Alla signaler – STOPP (9 st)
 
@@ -39,7 +39,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - 15 min efter köp: -0.6 % snitt, +0.1 % median, 7/10 positiva
 - 60 min efter köp: -0.5 % snitt, +0.2 % median, 8/10 positiva
 - Bästa inom 60 min: +0.9 % snitt, +0.4 % median, 9/10 positiva
-- Dagens stängning: -0.3 % snitt, +0.8 % median, 5/7 positiva
+- Dagens stängning: +0.8 % snitt, +1.0 % median, 8/10 positiva
 - Nästa dags stängning: -0.7 % snitt, +1.2 % median, 4/7 positiva
 
 ## Senaste 15
@@ -47,12 +47,12 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
 | 11-25 04:42 | PYPD | GODKÄNT | 363 min | – | – | – | väntar på öppning |
-| 11-24 21:30 | MMED | GODKÄNT | 456 min | 10.49 | 0.69 | – | pågår |
-| 11-24 21:30 | COGT | GODKÄNT | 386 min | 11.61 | 1.61 | – | pågår |
-| 11-23 22:53 | RHHBY | GODKÄNT | 358 min | 0.59 | 1.21 | – | pågår |
-| 11-23 22:53 | CTXR | GODKÄNT | 24 min | -0.36 | 3.38 | – | pågår |
-| 11-23 22:53 | BBIO | GODKÄNT | 4 min | 1.25 | 0.04 | – | pågår |
-| 11-21 01:07 | BCLI | CRL | 127 min | -3.20 | 13.88 | 11.13 | pågår |
+| 11-24 21:30 | MMED | GODKÄNT | 456 min | 10.49 | 0.69 | 0.34 | pågår |
+| 11-24 21:30 | COGT | GODKÄNT | 386 min | 11.61 | 1.61 | 0.09 | pågår |
+| 11-23 22:53 | RHHBY | GODKÄNT | 358 min | 0.59 | 1.21 | 2.62 | pågår |
+| 11-23 22:53 | CTXR | GODKÄNT | 24 min | -0.36 | 3.38 | 6.15 | pågår |
+| 11-23 22:53 | BBIO | GODKÄNT | 4 min | 1.25 | 0.04 | 7.34 | pågår |
+| 11-21 01:07 | BCLI | CRL | 127 min | -3.20 | 13.88 | 11.13 | klar |
 | 11-20 19:16 | RNXT | GODKÄNT | 435 min | -1.99 | 2.20 | -1.93 | klar |
 | 11-19 19:52 | TVRD | STOPP | 347 min | -5.94 | -3.16 | -0.42 | klar |
 | 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | väntar på data |
