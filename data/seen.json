@@ -1,7 +1,5 @@
 {
 "sec": [
-"urn:tag:sec.gov,2008:accession-number=0000897077-26-000108",
-"urn:tag:sec.gov,2008:accession-number=0000066570-26-000031",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-068918",
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-049630",
 "urn:tag:sec.gov,2008:accession-number=0001628280-26-068916",
@@ -4999,7 +4997,9 @@
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-054141",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-123975",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-010113",
-"urn:tag:sec.gov,2008:accession-number=0001628280-26-075895"
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-075895",
+"urn:tag:sec.gov,2008:accession-number=0001171843-26-007708",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-477043"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -5440,7 +5440,8 @@
 "http://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-30-2026-meeting-announcement-07302026",
 "http://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-29-2026-meeting-announcement-07292026",
 "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/green-lumber-holdings-llc-issues-recall-and-consumer-safety-alert",
-"http://www.fda.gov/drugs/first-generic-drug-approvals/2020-first-generic-drug-approvals"
+"http://www.fda.gov/drugs/first-generic-drug-approvals/2020-first-generic-drug-approvals",
+"http://www.fda.gov/about-fda/scientific-internships-fellowships-trainees-and-non-us-citizens/fda-pharmacy-student-experiential-program"
 ],
 "novel": [
 "Hibsago|10/20/2026",
