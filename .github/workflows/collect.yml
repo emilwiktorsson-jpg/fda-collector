@@ -30,7 +30,7 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
-          LOOP_MINUTES: "320"    # hur länge en omgång pågår (jobbgränsen hos GitHub är 360 min)
+          ROUND_MINUTES: "320"   # hur länge en omgång pågår (jobbgränsen hos GitHub är 360 min)
           POLL_ACTIVE: "150"     # sekunder mellan kontroller när SEC/FDA publicerar (vardagar 10:00-03:00 UTC)
           POLL_IDLE: "900"       # sekunder mellan kontroller övrig tid
           SAVE_EVERY: "1800"     # spara data minst så här ofta även utan nya signaler
@@ -46,7 +46,7 @@ jobs:
             fi
             LAST_SAVE=$(date +%s)
           }
-          END=$(( $(date +%s) + LOOP_MINUTES * 60 ))
+          END=$(( $(date +%s) + ROUND_MINUTES * 60 ))
           LAST_SAVE=$(date +%s)
           N=0
           while [ "$(date +%s)" -lt "$END" ]; do
