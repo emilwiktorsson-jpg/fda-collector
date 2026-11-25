@@ -1,7 +1,5 @@
 {
 "sec": [
-"urn:tag:sec.gov,2008:accession-number=0001075415-26-000037",
-"urn:tag:sec.gov,2008:accession-number=0001437749-26-034455",
 "urn:tag:sec.gov,2008:accession-number=0000097134-26-000027",
 "urn:tag:sec.gov,2008:accession-number=0001627223-26-000032",
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-121361",
@@ -4999,7 +4997,9 @@
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-477170",
 "urn:tag:sec.gov,2008:accession-number=0001096906-26-001898",
 "urn:tag:sec.gov,2008:accession-number=0001770373-26-000065",
-"urn:tag:sec.gov,2008:accession-number=0001193125-26-477186"
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-477186",
+"urn:tag:sec.gov,2008:accession-number=0001683168-26-009121",
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-477264"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -5444,7 +5444,8 @@
 "http://www.fda.gov/about-fda/scientific-internships-fellowships-trainees-and-non-us-citizens/fda-pharmacy-student-experiential-program",
 "http://www.fda.gov/about-fda/fda-pharmacy-student-experiential-program/how-apply-fda-pharmacy-student-experiential-program-psep",
 "http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-cber-webinar-considerations-development-car-t-cell-products-03072024",
-"http://www.fda.gov/drugs/investigational-new-drug-application-ind/how-request-domperidone-expanded-access-use"
+"http://www.fda.gov/drugs/investigational-new-drug-application-ind/how-request-domperidone-expanded-access-use",
+"http://www.fda.gov/industry/phase-1-investigational-new-drug-ind-navigator/phase-1-ind-guidance-documents"
 ],
 "novel": [
 "Hibsago|10/20/2026",
