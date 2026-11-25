@@ -38,6 +38,7 @@ def sec_atom(form):
     return ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=" + form +
             f"&company=&dateb=&owner=include&start=0&count={MAX_8K}&output=atom")
 SEC_TICKERS = "https://www.sec.gov/files/company_tickers.json"
+SEC_TICKERS_EX = "https://www.sec.gov/files/company_tickers_exchange.json"
 FDA_FEEDS = [f"https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/{k}/rss.xml"
              for k in ("press-releases", "drugs", "biologics")]
 FDA_NOVEL = f"https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-{dt.date.today().year}"
@@ -51,9 +52,9 @@ CATEGORIES = [
     # Riktiga besked formuleras aktivt: "announced today that the FDA has approved", "received FDA approval for".
     # Beskrivande boilerplate ("FDA-approved product", "potential approval") fångas INTE här (se NOT_NEWS).
     ("GODKÄNT", r"\b(FDA|Food and Drug Administration)(\s*\(\s*FDA\s*\))?\s+(has\s+|have\s+|today\s+)?(approved|cleared|granted\s+(accelerated\s+|full\s+|traditional\s+|marketing\s+|\d+\(k\)\s+|de novo\s+)?(approval|clearance|authorization))\b"
-                r"|\breceived\s+(U\.S\.\s+)?(FDA\s+)?(approval|clearance|authorization)\b"
+                r"|\breceived\s+(U\.?S\.?\s+)?(FDA\s+)?(approval|clearance|authorization)\b"
                 r"|\b(FDA|Food and Drug Administration)\s+(approval|clearance|authorization)\s+(of|for)\b"
-                r"|\bapprov(al|ed)\s+by\s+the\s+(U\.S\.\s+)?(FDA|Food and Drug Administration)\b"),
+                r"|\bapprov(al|ed)\s+by\s+the\s+(U\.?S\.?\s+)?(FDA|Food and Drug Administration)\b"),
     ("STOPP", r"clinical hold|safety communication|black box|boxed warning"),
     ("ÖVRIGT", r"\bPDUFA\b|priority review|breakthrough therapy|fast track|advisory committee|\bAdCom\b|"
                r"orphan drug|label expansion|\bsBLA\b|\bsNDA\b|\bBLA\b|\bNDA\b|510\(k\)|de novo|premarket approval|\bPMA\b"),
@@ -63,6 +64,7 @@ SKIP_FDA_CONTEXT = re.compile(r"risk factors|forward-looking statements", re.I) 
 CITATION = re.compile(r"\bdoi:|\baccessed\b|\bet al\b|\bpublished (january|february|march|april|may|june|july|august|"
                       r"september|october|november|december)\b|\bretrieved\b", re.I)  # referenslistor = brus
 HEAD_CHARS = 7000  # nyheten står i början av ett 8-K/pressmeddelande; referenser och boilerplate kommer sist
+MONTHS = r"(january|february|march|april|may|june|july|august|september|october|november|december)"
 # Utdrag som beskriver gamla/hypotetiska godkännanden, inte dagens besked
 NOT_NEWS = re.compile(r"FDA-approved|FDA-cleared|potential(ly)? approv|previously (approved|cleared)|approved (by the FDA )?in 20\d\d|"
                       r"if approved|seek(s|ing)? (FDA )?approval|anticipated approval|subject to (FDA )?approval|"
@@ -73,7 +75,26 @@ NOT_NEWS = re.compile(r"FDA-approved|FDA-cleared|potential(ly)? approv|previousl
                       r"\bIND\b|investigational new drug|as previously announced|"
                       # VD-/styrelsepresentationer som räknar upp gamla godkännanden
                       r"\b(led|oversaw|instrumental in|has taken|track record|career|joins?|joined|appoint(ed|ment)|welcome|"
-                      r"brings|decades? of|years of experience)\b", re.I)
+                      r"brings|decades? of|years of experience)\b|"
+                      # Förbehållstext ("no assurance ... will be approved by the FDA")
+                      r"will be approved|(no|any) assurances?|forward-looking|cautionary|safe harbor|"
+                      # Planer och möten, inte beslut ("plans to submit a BLA", "Type B meeting request")
+                      r"(plans?|plann(ed|ing)|intends?|expects?|aims?|prepar(e|es|ing)) to (submit|file)|"
+                      r"\bType [ABCD] meeting|meeting request|pre-?(BLA|NDA|MAA|IND)\b|pathway to|"
+                      r"(traditional|accelerated) or (traditional|accelerated) approval|"
+                      # Tillbakablick i kvartalsrapport ("In September, Abbott announced FDA approval")
+                      r"\bin " + MONTHS + r"( \d{1,2})?(, 20\d\d)?,|"
+                      r"\bquarter(ly)? (results|highlights)\b", re.I)
+# Allt efter förbehållsrubriken är boilerplate – klipps bort innan klassning
+BOILERPLATE_CUT = re.compile(r"forward[- ]looking statements|cautionary (note|statement)|safe harbor", re.I)
+# "received approval for X from the FDA" – FDA måste stå direkt efter, utan annan myndighet emellan
+FROM_FDA = re.compile(r"(?:(?!MHRA|\bEMA\b|European|Health Canada|PMDA|NMPA|CHMP|\.\s)[^\n]){0,60}?\b(from|by)\s+(the\s+)?(U\.?S\.?\s+)?(FDA|Food and Drug Administration)\b", re.I)
+# FDA lägger ut gamla beslutssidor på nytt i RSS-flödet med dagens datum. Beslutsdatumet står i sidans text.
+MAX_NEWS_AGE_DAYS = 7
+DECISION_DATE = re.compile(r"\b(?:On|For Immediate Release:?)\s+" + MONTHS + r"\.?\s+(\d{1,2}),\s+(20\d\d)\b", re.I)
+# Börser som räknas som noterade (handlas via Avanza/Nordnet). OTC-listade bolag notifieras bara om de är bevakade.
+LISTED = ("NASDAQ", "NYSE", "CBOE", "BATS", "ARCA", "AMEX")
+EXCHANGE = {}  # ticker -> börs enligt SEC ("Nasdaq", "NYSE", "OTC", ""); "?" = okänd
 
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Encoding": "gzip, deflate"})
@@ -186,6 +207,11 @@ def classify(text):
     """Returnerar (kategori, snippet) eller (None, None). Kräver att FDA nämns."""
     if not FDA_WORD.search(text):
         return None, None
+    c = BOILERPLATE_CUT.search(text, 300)
+    if c:
+        text = text[:c.start()]
+        if not FDA_WORD.search(text):
+            return None, None
     for cat, pat in CATEGORIES:
         for m in re.finditer(pat, text, re.I):
             a, b = max(0, m.start() - 140), min(len(text), m.end() + 180)
@@ -194,10 +220,38 @@ def classify(text):
                 continue  # NDA/BLA i riskfaktorer är brus; leta vidare
             if CITATION.search(snip):
                 continue  # referens till någon annans godkännande
-            if cat == "GODKÄNT" and NOT_NEWS.search(snip):
-                continue  # beskrivning av befintligt/hypotetiskt godkännande, inte dagens nyhet
+            if cat == "GODKÄNT":
+                if NOT_NEWS.search(snip):
+                    continue  # beskrivning av befintligt/hypotetiskt godkännande, inte dagens nyhet
+                if not FDA_WORD.search(m.group(0)) and not FROM_FDA.match(text, m.end()):
+                    continue  # "received approval" utan FDA – t.ex. MHRA/EMA
             return cat, snip
     return None, None
+
+
+def is_listed(ticker):
+    """Sant om tickern handlas på en riktig börs (eller om börsen är okänd)."""
+    ex = EXCHANGE.get(ticker, "?")
+    return ex == "?" or any(k in (ex or "").upper() for k in LISTED)
+
+
+def fda_decision_age(e, text):
+    """Dagar sedan FDA:s beslut enligt sidans egen text ("On December 1, 2023, the Food and Drug Administration ...").
+    Flödets datum duger inte. None = inget datum hittat (då släpps träffen igenom)."""
+    m = DECISION_DATE.search(text)
+    if not m and e.get("link"):
+        try:
+            time.sleep(0.2)
+            m = DECISION_DATE.search(strip_html(get(e["link"], timeout=20).text[:300_000]))
+        except Exception as ex:  # noqa
+            log_error(f"FDA sida {e.get('link')}: {ex}")
+    if not m:
+        return None
+    try:
+        d = dt.datetime.strptime(f"{m.group(1)[:3]} {m.group(2)} {m.group(3)}", "%b %d %Y").date()
+    except ValueError:
+        return None
+    return (dt.date.today() - d).days
 
 
 # ----------------------------------------------------------------------------- watchlist
@@ -337,11 +391,28 @@ def pdufa_context(ticker, drug_hint=""):
 
 # ----------------------------------------------------------------------------- SEC
 def sec_tickers():
-    r = get(SEC_TICKERS)
-    r.raise_for_status()
+    """CIK -> (ticker, namn). Ett bolag kan ha flera värdepapper hos SEC (stamaktie, warrant, preferensaktie, rätt).
+    Välj stamaktien: börsnoterad före OTC, sedan ticker utan bindestreck, sedan kortast, sedan SEC:s ordning."""
+    cands = {}
+    try:
+        j = get(SEC_TICKERS_EX).json()
+        f = j["fields"]
+        i_c, i_n, i_t, i_e = f.index("cik"), f.index("name"), f.index("ticker"), f.index("exchange")
+        for n, row in enumerate(j["data"]):
+            cands.setdefault(int(row[i_c]), []).append((row[i_t], row[i_n], row[i_e] or "", n))
+    except Exception as ex:  # noqa
+        log_error(f"SEC tickers (exchange): {ex}")
+        cands = {}
+        r = get(SEC_TICKERS)
+        r.raise_for_status()
+        for n, v in enumerate(r.json().values()):
+            cands.setdefault(int(v["cik_str"]), []).append((v["ticker"], v["title"], "?", n))
     out = {}
-    for v in r.json().values():
-        out[int(v["cik_str"])] = (v["ticker"], v["title"])
+    for cik, lst in cands.items():
+        for c in lst:
+            EXCHANGE[c[0]] = c[2]
+        t, name, _, _ = min(lst, key=lambda c: (not is_listed(c[0]), "-" in c[0], len(c[0]), c[3]))
+        out[cik] = (t, name)
     return out
 
 
@@ -387,6 +458,9 @@ def sec_feed(st, tick, wl, stats, form="8-K", only_watch=False):
         if not cat:
             continue
         watch = ticker in wl["tickers"]
+        if not watch and not is_listed(ticker):
+            stats["otc_skipped"] = stats.get("otc_skipped", 0) + 1
+            continue  # OTC-listat och inte bevakat: går sällan att handla via Avanza/Nordnet
         stats["sec_hits"] = stats.get("sec_hits", 0) + 1
         hits.append(dict(source=f"SEC {form}", ticker=ticker, company=company, category=cat, watch=watch,
                          title=e.get("title", ""), url=e.link, t=accepted, snippet=snip))
@@ -442,9 +516,13 @@ def fda_press(st, tick, cidx, wl, stats):
         cat, snip = classify("FDA " + text)
         if not cat:
             continue
-        tks = match_companies(text, cidx, wl)
+        tks = [t for t in match_companies(text, cidx, wl) if t in wl["tickers"] or is_listed(t)]
         if not tks:
             continue  # inget noterat bolag identifierat
+        age = fda_decision_age(e, text)
+        if age is not None and age > MAX_NEWS_AGE_DAYS:
+            stats["fda_old_skipped"] = stats.get("fda_old_skipped", 0) + 1
+            continue  # gammalt beslut som FDA lagt ut på nytt i flödet
         t_utc = None
         try:
             t_utc = dt.datetime(*e.published_parsed[:6], tzinfo=dt.timezone.utc)
@@ -489,7 +567,8 @@ def fda_novel(st, cidx, wl, stats):
 
 
 # ----------------------------------------------------------------------------- main
-def main():
+def run_once():
+    """En insamlingsrunda: hämta, klassa, notifiera, spara."""
     os.makedirs(DATA, exist_ok=True)
     st = load_state()
     wl = load_watchlist()
@@ -532,6 +611,9 @@ def main():
         t0 = h["ticker"].split("/")[0]
         lines = [f"{h['company'] or h['title']} – {h['category']}", f"{h['source']} {fmt_times(h['t'])}",
                  f"Marknad: {market_status()}"]
+        if h["t"]:
+            age_min = int((now_utc() - h["t"]).total_seconds() // 60)
+            lines.append(f"Ålder: {age_min} min sedan publicering" + (" – SENT, kursen kan redan ha rört sig" if age_min > 60 else ""))
         q = quote_line(t0)
         if q:
             lines.append(q)
@@ -548,6 +630,18 @@ def main():
     save_state(st)
     heartbeat(stats)
     print("OK", stats)
+
+
+def main():
+    """En körning, eller en slinga om LOOP_MINUTES > 0 (ny körning var POLL_SECONDS:e sekund tills tiden är slut)."""
+    loop_min = float(os.environ.get("LOOP_MINUTES", "0") or 0)
+    poll = max(60, int(os.environ.get("POLL_SECONDS", "180") or 180))
+    end = time.time() + loop_min * 60
+    while True:
+        run_once()
+        if time.time() + poll >= end:
+            break
+        time.sleep(poll)
 
 
 if __name__ == "__main__":
