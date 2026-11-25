@@ -1,8 +1,5 @@
 {
 "sec": [
-"urn:tag:sec.gov,2008:accession-number=0001628280-26-068916",
-"urn:tag:sec.gov,2008:accession-number=0000899689-26-000055",
-"urn:tag:sec.gov,2008:accession-number=0001451505-26-000083",
 "urn:tag:sec.gov,2008:accession-number=0001822492-26-000157",
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-443777",
 "urn:tag:sec.gov,2008:accession-number=0001320461-26-000132",
@@ -4999,7 +4996,10 @@
 "urn:tag:sec.gov,2008:accession-number=0001171843-26-007708",
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-477043",
 "urn:tag:sec.gov,2008:accession-number=0001654954-26-010115",
-"urn:tag:sec.gov,2008:accession-number=0001193125-26-477077"
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-477077",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-131953",
+"urn:tag:sec.gov,2008:accession-number=0001575872-26-000817",
+"urn:tag:sec.gov,2008:accession-number=0000950157-26-001287"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
@@ -5443,7 +5443,8 @@
 "http://www.fda.gov/drugs/first-generic-drug-approvals/2020-first-generic-drug-approvals",
 "http://www.fda.gov/about-fda/scientific-internships-fellowships-trainees-and-non-us-citizens/fda-pharmacy-student-experiential-program",
 "http://www.fda.gov/about-fda/fda-pharmacy-student-experiential-program/how-apply-fda-pharmacy-student-experiential-program-psep",
-"http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-cber-webinar-considerations-development-car-t-cell-products-03072024"
+"http://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/fda-cber-webinar-considerations-development-car-t-cell-products-03072024",
+"http://www.fda.gov/drugs/investigational-new-drug-application-ind/how-request-domperidone-expanded-access-use"
 ],
 "novel": [
 "Hibsago|10/20/2026",
