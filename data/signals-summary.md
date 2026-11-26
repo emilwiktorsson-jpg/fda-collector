@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-26 09:32 sv)
+# Signalutvärdering (uppdaterad 2026-11-26 10:32 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -46,7 +46,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-25 23:26 | SCLX | GODKÄNT | 1 min | – | – | – | väntar på öppning |
+| 11-25 23:26 | SCLX | GODKÄNT | 1 min | – | – | – | väntar på data |
 | 11-25 04:42 | PYPD | GODKÄNT | 363 min | 8.70 | 0.91 | -16.91 | pågår |
 | 11-24 21:30 | MMED | GODKÄNT | 456 min | 10.49 | 0.69 | 0.34 | klar |
 | 11-24 21:30 | COGT | GODKÄNT | 386 min | 11.61 | 1.61 | 0.09 | klar |
