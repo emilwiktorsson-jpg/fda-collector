@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-26 19:37 sv)
+# Signalutvärdering (uppdaterad 2026-11-26 19:47 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -59,5 +59,5 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 | 11-19 19:52 | EMMA | GODKÄNT | 1058 min | – | -0.00 | -0.00 | väntar på data |
 | 11-18 19:38 | LTRN | GODKÄNT | 363 min | -8.60 | -3.06 | -3.32 | klar |
 | 11-18 19:38 | RHHBY | GODKÄNT | – | -0.02 | -0.45 | -0.40 | klar |
-| 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | väntar på data |
+| 11-18 19:38 | NUVL | GODKÄNT | – | – | – | – | ingen data |
 | 11-18 02:31 | CYDY | GODKÄNT | 238 min | 2.20 | -3.80 | -9.80 | klar |
