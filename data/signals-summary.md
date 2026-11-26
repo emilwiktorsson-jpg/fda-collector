@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-26 20:28 sv)
+# Signalutvärdering (uppdaterad 2026-11-26 20:38 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
