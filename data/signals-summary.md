@@ -1,4 +1,4 @@
-# Signalutvärdering (uppdaterad 2026-11-27 12:10 sv)
+# Signalutvärdering (uppdaterad 2026-11-27 12:21 sv)
 
 Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanza/Nordnet har öppet. Avgifter och spread är inte medräknade. Inga order läggs.
 
@@ -7,8 +7,8 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 - Upptäcktsfördröjning: median 265 min, max 1058 min (SEC/FDA-tid -> upptäckt)
 - Redan rört sig före köp: +0.8 % snitt, +0.2 % median, 28/56 positiva
 - 15 min efter köp: -0.1 % snitt, +0.0 % median, 22/60 positiva
-- 60 min efter köp: -0.2 % snitt, -0.0 % median, 28/59 positiva
-- Bästa inom 60 min: +1.5 % snitt, +0.6 % median, 45/59 positiva
+- 60 min efter köp: -0.2 % snitt, -0.0 % median, 28/60 positiva
+- Bästa inom 60 min: +1.5 % snitt, +0.6 % median, 45/60 positiva
 - Dagens stängning: -1.6 % snitt, -0.4 % median, 24/59 positiva
 - Nästa dags stängning: +0.6 % snitt, +1.0 % median, 29/56 positiva
 
@@ -46,7 +46,7 @@ Köp antas 2 min efter att fda-collector upptäckt signalen, tidigast när Avanz
 
 | upptäckt (sv) | ticker | kat | fördröjn. | redan rört | +60 min | stängn. | status |
 |---|---|---|---|---|---|---|---|
-| 11-25 23:26 | SCLX | GODKÄNT | 1 min | 0.00 | – | – | pågår |
+| 11-25 23:26 | SCLX | GODKÄNT | 1 min | 0.00 | 0.00 | – | pågår |
 | 11-25 04:42 | PYPD | GODKÄNT | 363 min | 8.70 | 0.91 | -16.91 | pågår |
 | 11-24 21:30 | MMED | GODKÄNT | 456 min | 10.49 | 0.69 | 0.34 | klar |
 | 11-24 21:30 | COGT | GODKÄNT | 386 min | 11.61 | 1.61 | 0.09 | klar |
