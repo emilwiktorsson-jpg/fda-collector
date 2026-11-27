@@ -1,10 +1,5 @@
 {
 "sec": [
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-115161",
-"urn:tag:sec.gov,2008:accession-number=0001776985-26-000081",
-"urn:tag:sec.gov,2008:accession-number=0001776985-26-000080",
-"urn:tag:sec.gov,2008:accession-number=0001493152-26-049713",
-"urn:tag:sec.gov,2008:accession-number=0001650107-26-000141",
 "urn:tag:sec.gov,2008:accession-number=0001144800-26-000050",
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-049712",
 "urn:tag:sec.gov,2008:accession-number=0001144800-26-000048",
@@ -4999,7 +4994,12 @@
 "urn:tag:sec.gov,2008:accession-number=0001493152-26-054334",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-124291",
 "urn:tag:sec.gov,2008:accession-number=0001193125-26-479101",
-"urn:tag:sec.gov,2008:accession-number=0001213900-26-124296"
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-124296",
+"urn:tag:sec.gov,2008:accession-number=0001654954-26-010146",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-076031",
+"urn:tag:sec.gov,2008:accession-number=0001213900-26-124306",
+"urn:tag:sec.gov,2008:accession-number=0001104659-26-132257",
+"urn:tag:sec.gov,2008:accession-number=0001628280-26-076033"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
