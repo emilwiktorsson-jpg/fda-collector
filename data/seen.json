@@ -1,7 +1,5 @@
 {
 "sec": [
-"urn:tag:sec.gov,2008:accession-number=0001668438-26-000013",
-"urn:tag:sec.gov,2008:accession-number=0001345099-26-000095",
 "urn:tag:sec.gov,2008:accession-number=0001104659-26-121574",
 "urn:tag:sec.gov,2008:accession-number=0001292814-26-005126",
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-115077",
@@ -4999,7 +4997,9 @@
 "urn:tag:sec.gov,2008:accession-number=0001213900-26-124387",
 "urn:tag:sec.gov,2008:accession-number=0001062993-26-006301",
 "urn:tag:sec.gov,2008:accession-number=0001326771-26-000193",
-"urn:tag:sec.gov,2008:accession-number=0001193125-26-479597"
+"urn:tag:sec.gov,2008:accession-number=0001193125-26-479597",
+"urn:tag:sec.gov,2008:accession-number=0001325878-26-000243",
+"urn:tag:sec.gov,2008:accession-number=0001331451-26-000225"
 ],
 "fda_press": [
 "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
